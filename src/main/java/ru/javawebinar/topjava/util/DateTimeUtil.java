@@ -8,6 +8,8 @@ import java.time.LocalTime;
 import org.springframework.util.StringUtils;
 
 public class DateTimeUtil {
+        private DateTimeUtil() {
+           }
     private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
 
