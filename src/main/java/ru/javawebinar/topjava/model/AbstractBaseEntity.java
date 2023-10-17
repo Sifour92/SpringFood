@@ -7,6 +7,10 @@ import org.hibernate.Hibernate;
 @MappedSuperclass
 // http://stackoverflow.com/questions/594597/hibernate-annotations-which-is-better-field-or-property-access
 @Access(AccessType.FIELD)
+//AccessType.FIELD` делает доступ в `AbstractBaseEntity`
+// и всех классах-наследниках по полям.
+// При загрузке `Meal` Hibernate на основе поля `meal.user_id`
+// делает ленивую прокcи к `User`, у которой нет ничего, кроме id.
 public abstract class AbstractBaseEntity {
     public static final int START_SEQ = 100000;
 
