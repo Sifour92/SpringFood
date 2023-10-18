@@ -3,6 +3,7 @@ package ru.javawebinar.topjava.model;
 import javax.persistence.*;
 
 import org.hibernate.Hibernate;
+import org.springframework.data.domain.Persistable;
 
 @MappedSuperclass
 // http://stackoverflow.com/questions/594597/hibernate-annotations-which-is-better-field-or-property-access
@@ -11,7 +12,7 @@ import org.hibernate.Hibernate;
 // и всех классах-наследниках по полям.
 // При загрузке `Meal` Hibernate на основе поля `meal.user_id`
 // делает ленивую прокcи к `User`, у которой нет ничего, кроме id.
-public abstract class AbstractBaseEntity {
+public abstract class AbstractBaseEntity implements Persistable<Integer>{
     public static final int START_SEQ = 100000;
 
     @Id
@@ -33,10 +34,11 @@ public abstract class AbstractBaseEntity {
         this.id = id;
     }
 
+    @Override
     public Integer getId() {
         return id;
     }
-
+    @Override
     public boolean isNew() {
         return this.id == null;
     }

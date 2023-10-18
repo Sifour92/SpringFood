@@ -4,10 +4,17 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:jdbc="http://www.springframework.org/schema/jdbc"
        xmlns:tx="http://www.springframework.org/schema/tx"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-       http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
-       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/jdbc
+       http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/data/jpa
+       https://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
     <!-- Change DB by comment/uncomment property-placeholder -->
 <!--    <context:property-placeholder location="classpath:db/postgres.properties" system-properties-mode="OVERRIDE"/>-->
     <!--    <context:property-placeholder location="classpath:db/hsqldb.properties" system-properties-mode="OVERRIDE"/>-->
@@ -25,7 +32,10 @@
     <!--    <bean class="org.springframework.beans.factory.config.MethodInvokingBean">-->
     <!--        <property name="staticMethod" value="org.slf4j.bridge.SLF4JBridgeHandler.install"/>-->
     <!--    </bean>-->
-    <context:component-scan base-package="ru.javawebinar.**.repository.jpa"/>
+
+<!--    <context:component-scan base-package="ru.javawebinar.**.repository.jpa"/>-->
+    <context:component-scan base-package="ru.javawebinar.**.repository.datajpa"/>
+    <jpa:repositories base-package="ru.javawebinar.**.repository.datajpa"/>
 
     <!--no pooling-->
     <!--    <bean id="dataSource"-->
@@ -108,4 +118,14 @@
                   p:username="${database.username}"
                   p:password="${database.password}"/>
         </beans>
+
+<!--    <beans profile="jdbc">-->
+
+<!--    </beans>-->
+<!--    <beans profile="jpa">-->
+
+<!--    </beans>-->
+<!--    <beans profile="datajpa">-->
+
+<!--    </beans>-->
 </beans>
