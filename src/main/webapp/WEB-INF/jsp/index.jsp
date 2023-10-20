@@ -5,9 +5,9 @@
 <fmt:setBundle basename="messages.app"/>
 
 <html>
-<jsp:include page="fragments/headTag.jsp"/>
+<jsp:include page="../../fragments/headTag.jsp"/>
 <body>
-<jsp:include page="fragments/bodyHeader.jsp"/>
+<jsp:include page="../../fragments/bodyHeader.jsp"/>
 <br>
 <section>
     <form method="post" action="users">
@@ -18,6 +18,6 @@
             <button type="submit"><fmt:message key="common.select"/></button>
         </form>
 </section>
-<jsp:include page="fragments/footer.jsp"/>
+<jsp:include page="../../fragments/footer.jsp"/>
 </body>
 </html>

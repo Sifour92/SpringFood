@@ -32,6 +32,7 @@
          on session expiration as well as webapp lifecycle) -->
         <!--
     <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
+    jndi
     -->
         <Resource name="jdbc/topjava"
                   auth="Container"
