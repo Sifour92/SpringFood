@@ -1,10 +1,13 @@
 package ru.javawebinar.topjava.service;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.javawebinar.topjava.model.Meal;
 import ru.javawebinar.topjava.repository.MealRepository;
+import ru.javawebinar.topjava.repository.UserRepository;
 import ru.javawebinar.topjava.util.DateTimeUtil;
 import org.springframework.util.Assert;
 
@@ -50,5 +53,16 @@ public class MealService {
     public Meal create(Meal meal, int userId) {
         Assert.notNull(meal, "meal must not be null");
         return repository.save(meal, userId);
+    }
+
+    @Autowired
+    private UserRepository userRepository;
+
+    @Transactional
+    //в одной транзакции
+    public Meal getWithUser(Integer id, Integer userid) {
+        Meal meal = get(id, userid);
+        meal.setUser(userRepository.get(userid));
+        return meal;
     }
 }

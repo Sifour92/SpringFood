@@ -13,24 +13,22 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public interface CrudMealRepository extends JpaRepository<Meal,Integer> {
-    @Transactional
+public interface CrudMealRepository extends JpaRepository<Meal, Integer> {
     @Override
-    Meal save(Meal meal);
-    @Query("SELECT u FROM User u WHERE u.id = :userId")
-    User findByUserId(@Param("userId") int userId);
-//    User findByUserById(int userId);
-
-    boolean existsByIdAndUserId(Integer id, int userId);
-
-    Meal findByIdAndUserId(Integer id, int userId);
-
     @Transactional
-    @Modifying
-    @Query("DELETE FROM Meal m WHERE m.id = :id AND m.user.id = :userId")
-    int deleteByIdAndUserId(@Param("id") Integer id, @Param("userId") int userId);
+    Meal save(Meal item);
 
-    List<Meal> findAllByUserId(int userId, Sort sort);
+    @Modifying
+    @Transactional
+    @Query("DELETE FROM Meal m WHERE m.id=:id AND m.user.id=:userId")
+    int delete(@Param("id") int id, @Param("userId") int userId);
+
+    @Query("SELECT m FROM Meal m WHERE m.user.id=:userId ORDER BY m.dateTime DESC")
+    List<Meal> getAll(@Param("userId") int userId);
+
+//    @Query("SELECT m FROM Meal m JOIN FETCH m.user WHERE m.id = ?1 and m.user.id = ?2")
+//    Meal getWithUser(int id, int userId);
+
     @Query("SELECT m from Meal m WHERE m.user.id=:userId AND m.dateTime >= :startDate AND m.dateTime < :endDate ORDER BY m.dateTime DESC")
     List<Meal> getBetween(@Param("startDate") LocalDateTime startDate, @Param("endDate") LocalDateTime endDate, @Param("userId") int userId);
 }
