@@ -1,7 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%--локализация--%>
 <fmt:setBundle basename="messages.app"/>
 
@@ -12,16 +11,15 @@
 
 <jsp:include page="../../fragments/bodyHeader.jsp"/>
 <section>
-        <h3><fmt:message key="user.title"/></h3>
-
+       <h3><spring:message code="user.title"/></h3>
         <table border="1" cellpadding="8" cellspacing="0">
             <thead>
         <tr>
-                <th><fmt:message key="user.name"/></th>
-                <th><fmt:message key="user.email"/></th>
-                <th><fmt:message key="user.roles"/></th>
-                <th><fmt:message key="user.active"/></th>
-                <th><fmt:message key="user.registered"/></th>
+                        <th><spring:message code="user.name"/></th>
+                        <th><spring:message code="user.email"/></th>
+                        <th><spring:message code="user.roles"/></th>
+                        <th><spring:message code="user.active"/></th>
+                        <th><spring:message code="user.registered"/></th>
             </tr>
         </thead>
             <c:forEach items="${users}" var="user">

@@ -34,12 +34,12 @@
     <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
     jndi
     -->
-        <Resource name="jdbc/topjava"
+        <Resource name="jdbc/meal"
                   auth="Container"
                   type="javax.sql.DataSource"
-                  url="jdbc:postgresql://localhost:5432/topjava"
-                  username="user"
-                  password="password"
+                  url="jdbc:postgresql://localhost:5432/meal"
+                  username="tandraym"
+                  password="86715352"
                   driverClassName="org.postgresql.Driver"
                   validationQuery="SELECT 1"
                   maxTotal="10"

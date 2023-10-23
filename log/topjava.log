@@ -1,0 +1,1123 @@
+2023-10-23 21:58:01,055 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 21:58:01,347 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-23 21:58:01,414 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 - Finished Spring Data repository scanning in 56ms. Found 2 JPA repository interfaces.
+2023-10-23 21:58:02,099 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 21:58:02,122 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/cargo/configurations/tomcat9x/webapps/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 21:58:02,144 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/cargo/configurations/tomcat9x/webapps/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 21:58:02,197 WARN  o.s.web.context.support.XmlWebApplicationContext.refresh:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NamingException: Unexpected exception resolving reference [Root exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (ВАЖНО: пользователь "user" не прошёл проверку подлинности (по паролю))]
+2023-10-23 21:58:02,200 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'users' removed from EhcacheManager.
+2023-10-23 21:58:02,206 ERROR org.springframework.web.context.ContextLoader.initWebApplicationContext:313 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NamingException: Unexpected exception resolving reference [Root exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (ВАЖНО: пользователь "user" не прошёл проверку подлинности (по паролю))]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1702)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4685)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5146)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:978)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1849)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:773)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:427)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:936)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NamingException: Unexpected exception resolving reference [Root exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (ВАЖНО: пользователь "user" не прошёл проверку подлинности (по паролю))]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 56 common frames omitted
+Caused by: javax.naming.NamingException: Unexpected exception resolving reference
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:882)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:174)
+	at org.apache.naming.SelectorContext.lookup(SelectorContext.java:163)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at org.springframework.jndi.JndiTemplate.lambda$lookup$0(JndiTemplate.java:157)
+	at org.springframework.jndi.JndiTemplate.execute(JndiTemplate.java:92)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:157)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:179)
+	at org.springframework.jndi.JndiLocatorSupport.lookup(JndiLocatorSupport.java:96)
+	at org.springframework.jndi.JndiObjectLocator.lookup(JndiObjectLocator.java:114)
+	at org.springframework.jndi.JndiObjectFactoryBean.lookupWithFallback(JndiObjectFactoryBean.java:239)
+	at org.springframework.jndi.JndiObjectFactoryBean.afterPropertiesSet(JndiObjectFactoryBean.java:225)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795)
+	... 63 common frames omitted
+Caused by: java.sql.SQLException: Cannot create PoolableConnectionFactory (ВАЖНО: пользователь "user" не прошёл проверку подлинности (по паролю))
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:669)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:544)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getLogWriter(BasicDataSource.java:1077)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.createDataSource(BasicDataSourceFactory.java:561)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance(BasicDataSourceFactory.java:238)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:96)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:857)
+	... 82 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ВАЖНО: пользователь "user" не прошёл проверку подлинности (по паролю)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:55)
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:355)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.validateConnectionFactory(BasicDataSource.java:115)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:665)
+	... 89 common frames omitted
+2023-10-23 21:59:10,759 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 21:59:11,050 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-23 21:59:11,119 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 - Finished Spring Data repository scanning in 58ms. Found 2 JPA repository interfaces.
+2023-10-23 21:59:11,840 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 21:59:11,861 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/cargo/configurations/tomcat9x/webapps/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 21:59:11,882 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/cargo/configurations/tomcat9x/webapps/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 21:59:11,934 WARN  o.s.web.context.support.XmlWebApplicationContext.refresh:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NamingException: Unexpected exception resolving reference [Root exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (ВАЖНО: пользователь "user" не прошёл проверку подлинности (по паролю))]
+2023-10-23 21:59:11,938 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'users' removed from EhcacheManager.
+2023-10-23 21:59:11,944 ERROR org.springframework.web.context.ContextLoader.initWebApplicationContext:313 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NamingException: Unexpected exception resolving reference [Root exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (ВАЖНО: пользователь "user" не прошёл проверку подлинности (по паролю))]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1702)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4685)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5146)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:978)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1849)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:773)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:427)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:936)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NamingException: Unexpected exception resolving reference [Root exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (ВАЖНО: пользователь "user" не прошёл проверку подлинности (по паролю))]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 56 common frames omitted
+Caused by: javax.naming.NamingException: Unexpected exception resolving reference
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:882)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:174)
+	at org.apache.naming.SelectorContext.lookup(SelectorContext.java:163)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at org.springframework.jndi.JndiTemplate.lambda$lookup$0(JndiTemplate.java:157)
+	at org.springframework.jndi.JndiTemplate.execute(JndiTemplate.java:92)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:157)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:179)
+	at org.springframework.jndi.JndiLocatorSupport.lookup(JndiLocatorSupport.java:96)
+	at org.springframework.jndi.JndiObjectLocator.lookup(JndiObjectLocator.java:114)
+	at org.springframework.jndi.JndiObjectFactoryBean.lookupWithFallback(JndiObjectFactoryBean.java:239)
+	at org.springframework.jndi.JndiObjectFactoryBean.afterPropertiesSet(JndiObjectFactoryBean.java:225)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795)
+	... 63 common frames omitted
+Caused by: java.sql.SQLException: Cannot create PoolableConnectionFactory (ВАЖНО: пользователь "user" не прошёл проверку подлинности (по паролю))
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:669)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:544)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getLogWriter(BasicDataSource.java:1077)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.createDataSource(BasicDataSourceFactory.java:561)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance(BasicDataSourceFactory.java:238)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:96)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:341)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:857)
+	... 82 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ВАЖНО: пользователь "user" не прошёл проверку подлинности (по паролю)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:55)
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:355)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.validateConnectionFactory(BasicDataSource.java:115)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:665)
+	... 89 common frames omitted
+2023-10-23 22:01:57,545 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:01:57,846 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-23 22:01:57,916 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 - Finished Spring Data repository scanning in 58ms. Found 2 JPA repository interfaces.
+2023-10-23 22:01:58,600 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:01:58,622 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/cargo/configurations/tomcat9x/webapps/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:01:58,644 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/cargo/configurations/tomcat9x/webapps/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:01:58,674 WARN  o.s.web.context.support.XmlWebApplicationContext.refresh:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+2023-10-23 22:01:58,677 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'users' removed from EhcacheManager.
+2023-10-23 22:01:58,682 ERROR org.springframework.web.context.ContextLoader.initWebApplicationContext:313 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1702)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4685)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5146)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:978)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1849)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:773)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:427)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:936)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 56 common frames omitted
+Caused by: javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:833)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:174)
+	at org.apache.naming.SelectorContext.lookup(SelectorContext.java:163)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at org.springframework.jndi.JndiTemplate.lambda$lookup$0(JndiTemplate.java:157)
+	at org.springframework.jndi.JndiTemplate.execute(JndiTemplate.java:92)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:157)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:179)
+	at org.springframework.jndi.JndiLocatorSupport.lookup(JndiLocatorSupport.java:96)
+	at org.springframework.jndi.JndiObjectLocator.lookup(JndiObjectLocator.java:114)
+	at org.springframework.jndi.JndiObjectFactoryBean.lookupWithFallback(JndiObjectFactoryBean.java:239)
+	at org.springframework.jndi.JndiObjectFactoryBean.afterPropertiesSet(JndiObjectFactoryBean.java:225)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795)
+	... 63 common frames omitted
+2023-10-23 22:02:26,408 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:02:26,695 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-23 22:02:26,768 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 - Finished Spring Data repository scanning in 60ms. Found 2 JPA repository interfaces.
+2023-10-23 22:02:27,449 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:02:27,471 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/cargo/configurations/tomcat9x/webapps/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:02:27,493 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/cargo/configurations/tomcat9x/webapps/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:02:27,525 WARN  o.s.web.context.support.XmlWebApplicationContext.refresh:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+2023-10-23 22:02:27,528 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'users' removed from EhcacheManager.
+2023-10-23 22:02:27,533 ERROR org.springframework.web.context.ContextLoader.initWebApplicationContext:313 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1702)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4685)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5146)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:978)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1849)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:773)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:427)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:936)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 56 common frames omitted
+Caused by: javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:833)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:174)
+	at org.apache.naming.SelectorContext.lookup(SelectorContext.java:163)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at org.springframework.jndi.JndiTemplate.lambda$lookup$0(JndiTemplate.java:157)
+	at org.springframework.jndi.JndiTemplate.execute(JndiTemplate.java:92)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:157)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:179)
+	at org.springframework.jndi.JndiLocatorSupport.lookup(JndiLocatorSupport.java:96)
+	at org.springframework.jndi.JndiObjectLocator.lookup(JndiObjectLocator.java:114)
+	at org.springframework.jndi.JndiObjectFactoryBean.lookupWithFallback(JndiObjectFactoryBean.java:239)
+	at org.springframework.jndi.JndiObjectFactoryBean.afterPropertiesSet(JndiObjectFactoryBean.java:225)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795)
+	... 63 common frames omitted
+2023-10-23 22:06:38,876 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:06:39,154 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-23 22:06:39,222 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 - Finished Spring Data repository scanning in 56ms. Found 2 JPA repository interfaces.
+2023-10-23 22:06:39,899 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:06:39,920 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/cargo/configurations/tomcat9x/webapps/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:06:39,941 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/cargo/configurations/tomcat9x/webapps/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:06:39,967 WARN  o.s.web.context.support.XmlWebApplicationContext.refresh:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+2023-10-23 22:06:39,970 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'users' removed from EhcacheManager.
+2023-10-23 22:06:39,981 ERROR org.springframework.web.context.ContextLoader.initWebApplicationContext:313 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1702)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4685)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5146)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:978)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1849)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:773)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:427)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:936)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Invocation of init method failed; nested exception is javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 56 common frames omitted
+Caused by: javax.naming.NameNotFoundException: Name [meal] is not bound in this Context. Unable to find [meal].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:833)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:160)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:843)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:174)
+	at org.apache.naming.SelectorContext.lookup(SelectorContext.java:163)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at org.springframework.jndi.JndiTemplate.lambda$lookup$0(JndiTemplate.java:157)
+	at org.springframework.jndi.JndiTemplate.execute(JndiTemplate.java:92)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:157)
+	at org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:179)
+	at org.springframework.jndi.JndiLocatorSupport.lookup(JndiLocatorSupport.java:96)
+	at org.springframework.jndi.JndiObjectLocator.lookup(JndiObjectLocator.java:114)
+	at org.springframework.jndi.JndiObjectFactoryBean.lookupWithFallback(JndiObjectFactoryBean.java:239)
+	at org.springframework.jndi.JndiObjectFactoryBean.afterPropertiesSet(JndiObjectFactoryBean.java:225)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795)
+	... 63 common frames omitted
+2023-10-23 22:10:26,040 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:10:26,298 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-23 22:10:26,363 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 - Finished Spring Data repository scanning in 54ms. Found 2 JPA repository interfaces.
+2023-10-23 22:10:26,970 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:10:26,989 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:10:27,008 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:10:27,086 INFO  org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-23 22:10:27,150 INFO  org.hibernate.Version.logVersion:46 - HHH000412: Hibernate Core {5.4.7.Final}
+2023-10-23 22:10:27,263 INFO  org.hibernate.annotations.common.Version.<clinit>:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-10-23 22:10:27,606 INFO  org.hibernate.dialect.Dialect.<init>:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-23 22:10:27,913 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:10:28,115 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.javawebinar.topjava.model.User.roles] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2023-10-23 22:10:28,121 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.javawebinar.topjava.model.User.roles' created in EhcacheManager.
+2023-10-23 22:10:28,123 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.javawebinar.topjava.model.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2023-10-23 22:10:28,125 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.javawebinar.topjava.model.User' created in EhcacheManager.
+2023-10-23 22:10:28,462 INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-23 22:10:28,538 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:419 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-23 22:10:29,053 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 3011 ms
+2023-10-23 22:10:29,070 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:10:29,206 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:10:29,244 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:10:29,270 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:10:29,284 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:10:29,303 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:10:29,317 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:10:29,318 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 248 ms
+2023-10-23 22:10:29,787 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:10:29,791 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:10:29,805 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:10:29,808 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:10:30,596 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:10:30,845 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:10:30,846 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:10:30,847 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:10:30,847 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:10:30,856 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:10:30,885 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-10-23 22:10:30,896 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-10-23 22:10:30,911 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:14:04,955 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:14:05,202 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-23 22:14:05,265 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 - Finished Spring Data repository scanning in 52ms. Found 2 JPA repository interfaces.
+2023-10-23 22:14:05,886 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:14:05,906 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:14:05,924 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:14:05,999 INFO  org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-23 22:14:06,064 INFO  org.hibernate.Version.logVersion:46 - HHH000412: Hibernate Core {5.4.7.Final}
+2023-10-23 22:14:06,180 INFO  org.hibernate.annotations.common.Version.<clinit>:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-10-23 22:14:06,518 INFO  org.hibernate.dialect.Dialect.<init>:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-23 22:14:06,811 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:14:07,011 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.javawebinar.topjava.model.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2023-10-23 22:14:07,017 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.javawebinar.topjava.model.User' created in EhcacheManager.
+2023-10-23 22:14:07,020 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.javawebinar.topjava.model.User.roles] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2023-10-23 22:14:07,021 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.javawebinar.topjava.model.User.roles' created in EhcacheManager.
+2023-10-23 22:14:07,339 INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-23 22:14:07,412 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:419 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-23 22:14:07,925 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 2968 ms
+2023-10-23 22:14:07,943 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:14:08,078 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:14:08,115 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:14:08,141 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:14:08,152 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:14:08,171 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:14:08,186 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:14:08,186 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 243 ms
+2023-10-23 22:14:08,660 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:14:08,664 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:14:08,678 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:14:08,681 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:14:09,460 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:14:09,683 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:14:09,684 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:14:09,685 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:14:09,685 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:14:09,689 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:14:09,722 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-10-23 22:14:09,729 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-10-23 22:14:09,731 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-10-23 22:14:11,325 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/users", parameters={}
+2023-10-23 22:14:11,326 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getUsers(Model)
+2023-10-23 22:14:11,479 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'users', model {users=[User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=[ROLE_ADMIN], caloriesPerDay=2000}, User{id=100000, email=user@yandex.ru, name=User, enabled=true, roles=[ROLE_USER], caloriesPerDay=2000}]}
+2023-10-23 22:14:11,479 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/users.jsp]
+2023-10-23 22:14:11,579 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:14:12,778 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:14:12,779 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:14:12,781 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:14:12,781 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:14:12,785 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:14:15,462 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/users", parameters={}
+2023-10-23 22:14:15,463 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getUsers(Model)
+2023-10-23 22:14:15,472 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'users', model {users=[User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=[ROLE_ADMIN], caloriesPerDay=2000}, User{id=100000, email=user@yandex.ru, name=User, enabled=true, roles=[ROLE_USER], caloriesPerDay=2000}]}
+2023-10-23 22:14:15,473 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/users.jsp]
+2023-10-23 22:14:15,489 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:14:16,136 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:14:16,137 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:14:16,138 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:14:16,139 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:14:16,140 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:14:16,842 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-23 22:14:16,844 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals
+2023-10-23 22:14:16,845 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-23 22:14:50,310 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:14:51,140 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:14:51,161 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:14:51,168 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:14:51,736 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1424 ms
+2023-10-23 22:14:51,753 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:14:51,891 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:14:51,913 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:14:52,086 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:14:52,111 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:14:52,122 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:14:52,142 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:14:52,156 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:14:52,156 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 403 ms
+2023-10-23 22:14:52,511 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:14:52,514 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:14:52,528 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:14:52,531 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:14:53,319 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:14:53,538 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:14:53,542 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:14:53,543 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:14:53,544 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:14:53,552 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:14:53,569 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-10-23 22:14:53,573 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-10-23 22:14:53,575 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-10-23 22:14:56,746 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/users", parameters={}
+2023-10-23 22:14:56,748 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getUsers(Model)
+2023-10-23 22:14:56,847 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'users', model {users=[User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=null, caloriesPerDay=2000}, User{id=100000, email=user@yandex.ru, name=User, enabled=true, roles=null, caloriesPerDay=2000}]}
+2023-10-23 22:14:56,847 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/users.jsp]
+2023-10-23 22:14:56,952 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:14:57,526 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:14:57,526 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:14:57,527 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:14:57,528 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:14:57,531 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:15:45,082 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:15:45,878 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:15:45,898 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:15:45,904 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:15:46,433 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1349 ms
+2023-10-23 22:15:46,450 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:15:46,588 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:15:46,610 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:15:46,782 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:15:46,807 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:15:46,819 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:15:46,840 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:15:46,855 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:15:46,856 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 406 ms
+2023-10-23 22:15:47,416 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:15:47,419 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:15:47,433 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:15:47,436 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:15:48,234 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:15:48,456 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:15:48,456 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:15:48,457 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:15:48,459 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:15:48,471 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:15:48,494 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-10-23 22:15:48,508 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-10-23 22:15:48,510 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-10-23 22:15:50,599 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/users", parameters={}
+2023-10-23 22:15:50,601 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getUsers(Model)
+2023-10-23 22:15:50,713 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'users', model {users=[User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=null, caloriesPerDay=2000}, User{id=100000, email=user@yandex.ru, name=User, enabled=true, roles=null, caloriesPerDay=2000}]}
+2023-10-23 22:15:50,717 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/users.jsp]
+2023-10-23 22:15:50,828 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:24:59,930 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:25:00,685 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:25:00,704 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:25:00,710 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:25:01,215 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1283 ms
+2023-10-23 22:25:01,232 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:25:01,366 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:25:01,387 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:25:01,551 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:25:01,577 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:25:01,588 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:25:01,609 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:25:01,622 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:25:01,623 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 391 ms
+2023-10-23 22:25:02,018 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:25:02,021 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:25:02,035 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:25:02,038 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:25:02,769 DEBUG org.springframework.web.servlet.DispatcherServlet.render:1380 - Error rendering view [org.springframework.web.servlet.view.JstlView: name 'index'; URL [/WEB-INF/jsp/index.jsp]]
+org.apache.jasper.JasperException: An exception occurred processing [/fragments/bodyHeader.jsp] at line [5]
+
+2: <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+3: <header>
+4:         <a href="meals"><spring:message code="app.title"/></a> | <a href="users"><spring:message code="user.title"/></a> | <a href="${pageContext.request.contextPath}"><spring:message code="app.home"/></a>
+5: </header>
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:610)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:489)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:537)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:480)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:994)
+	at org.apache.jsp.WEB_002dINF.jsp.index_jsp._jspService(index_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1376)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1121)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: javax.servlet.ServletException: javax.servlet.jsp.JspTagException: No message found under code 'app.title' for locale 'en_US'.
+	at org.apache.jasper.runtime.PageContextImpl.handlePageException(PageContextImpl.java:655)
+	at org.apache.jsp.fragments.bodyHeader_jsp._jspService(bodyHeader_jsp.java:154)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+	... 58 common frames omitted
+Caused by: javax.servlet.jsp.JspTagException: No message found under code 'app.title' for locale 'en_US'.
+	at org.springframework.web.servlet.tags.MessageTag.doEndTag(MessageTag.java:294)
+	at org.apache.jsp.fragments.bodyHeader_jsp._jspx_meth_spring_005fmessage_005f0(bodyHeader_jsp.java:177)
+	at org.apache.jsp.fragments.bodyHeader_jsp._jspService(bodyHeader_jsp.java:130)
+	... 61 common frames omitted
+2023-10-23 22:25:02,769 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1101 - Failed to complete request: org.apache.jasper.JasperException: An exception occurred processing [/fragments/bodyHeader.jsp] at line [5]
+
+2: <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+3: <header>
+4:         <a href="meals"><spring:message code="app.title"/></a> | <a href="users"><spring:message code="user.title"/></a> | <a href="${pageContext.request.contextPath}"><spring:message code="app.home"/></a>
+5: </header>
+
+
+Stacktrace:
+2023-10-23 22:25:02,999 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:25:03,000 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:25:03,001 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:25:03,001 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:25:03,016 DEBUG org.springframework.web.servlet.DispatcherServlet.render:1380 - Error rendering view [org.springframework.web.servlet.view.JstlView: name 'index'; URL [/WEB-INF/jsp/index.jsp]]
+org.apache.jasper.JasperException: An exception occurred processing [/fragments/bodyHeader.jsp] at line [5]
+
+2: <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+3: <header>
+4:         <a href="meals"><spring:message code="app.title"/></a> | <a href="users"><spring:message code="user.title"/></a> | <a href="${pageContext.request.contextPath}"><spring:message code="app.home"/></a>
+5: </header>
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:610)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:489)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:537)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:480)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:994)
+	at org.apache.jsp.WEB_002dINF.jsp.index_jsp._jspService(index_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:425)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1376)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1121)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: javax.servlet.ServletException: javax.servlet.jsp.JspTagException: No message found under code 'app.title' for locale 'ru_RU'.
+	at org.apache.jasper.runtime.PageContextImpl.handlePageException(PageContextImpl.java:655)
+	at org.apache.jsp.fragments.bodyHeader_jsp._jspService(bodyHeader_jsp.java:154)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+	... 58 common frames omitted
+Caused by: javax.servlet.jsp.JspTagException: No message found under code 'app.title' for locale 'ru_RU'.
+	at org.springframework.web.servlet.tags.MessageTag.doEndTag(MessageTag.java:294)
+	at org.apache.jsp.fragments.bodyHeader_jsp._jspx_meth_spring_005fmessage_005f0(bodyHeader_jsp.java:177)
+	at org.apache.jsp.fragments.bodyHeader_jsp._jspService(bodyHeader_jsp.java:130)
+	... 61 common frames omitted
+2023-10-23 22:25:03,017 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1101 - Failed to complete request: org.apache.jasper.JasperException: An exception occurred processing [/fragments/bodyHeader.jsp] at line [5]
+
+2: <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+3: <header>
+4:         <a href="meals"><spring:message code="app.title"/></a> | <a href="users"><spring:message code="user.title"/></a> | <a href="${pageContext.request.contextPath}"><spring:message code="app.home"/></a>
+5: </header>
+
+
+Stacktrace:
+2023-10-23 22:28:24,037 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:28:24,821 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:28:24,840 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:28:24,846 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:28:25,408 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1369 ms
+2023-10-23 22:28:25,428 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:28:25,593 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:28:25,615 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:28:25,787 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:28:25,814 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:28:25,826 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:28:25,846 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:28:25,860 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:28:25,860 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 432 ms
+2023-10-23 22:28:26,114 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:28:26,118 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:28:26,131 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:28:26,133 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:28:26,942 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:28:27,151 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:28:27,151 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:28:27,153 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:28:27,153 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:28:27,158 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:28:27,192 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-10-23 22:28:27,196 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-10-23 22:28:27,199 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-10-23 22:28:29,517 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/users", parameters={}
+2023-10-23 22:28:29,518 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getUsers(Model)
+2023-10-23 22:28:29,602 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'users', model {users=[User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=null, caloriesPerDay=2000}, User{id=100000, email=user@yandex.ru, name=User, enabled=true, roles=null, caloriesPerDay=2000}]}
+2023-10-23 22:28:29,603 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/users.jsp]
+2023-10-23 22:28:29,727 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:29:37,954 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:29:38,723 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:29:38,742 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:29:38,749 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:29:39,271 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1315 ms
+2023-10-23 22:29:39,288 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:29:39,450 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:29:39,471 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:29:39,644 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:29:39,669 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:29:39,681 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:29:39,703 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:29:39,716 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:29:39,716 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 428 ms
+2023-10-23 22:29:40,212 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:29:40,216 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:29:40,229 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:29:40,232 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:29:41,002 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:29:41,221 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:29:41,222 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:29:41,224 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:29:41,225 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:29:41,231 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:29:45,702 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/users", parameters={}
+2023-10-23 22:29:45,704 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getUsers(Model)
+2023-10-23 22:29:45,789 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'users', model {users=[User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=null, caloriesPerDay=2000}, User{id=100000, email=user@yandex.ru, name=User, enabled=true, roles=null, caloriesPerDay=2000}]}
+2023-10-23 22:29:45,789 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/users.jsp]
+2023-10-23 22:29:45,885 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:31:47,384 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:31:48,136 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:31:48,156 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:31:48,162 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:31:48,721 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1335 ms
+2023-10-23 22:31:48,742 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:31:48,911 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:31:48,933 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:31:49,098 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:31:49,122 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:31:49,132 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:31:49,154 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:31:49,168 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:31:49,168 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 426 ms
+2023-10-23 22:31:49,456 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:31:49,459 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:31:49,472 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:31:49,475 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:31:50,270 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:31:50,487 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:31:50,487 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:31:50,489 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:31:50,491 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:31:50,496 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:31:50,532 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-10-23 22:31:50,547 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-10-23 22:31:50,549 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-10-23 22:31:51,828 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/users", parameters={}
+2023-10-23 22:31:51,830 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getUsers(Model)
+2023-10-23 22:31:51,918 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'users', model {users=[User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=null, caloriesPerDay=2000}, User{id=100000, email=user@yandex.ru, name=User, enabled=true, roles=null, caloriesPerDay=2000}]}
+2023-10-23 22:31:51,918 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/users.jsp]
+2023-10-23 22:31:52,010 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:32:40,880 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:32:41,643 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:32:41,663 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:32:41,671 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:32:42,216 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1334 ms
+2023-10-23 22:32:42,235 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:32:42,408 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:32:42,429 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:32:42,602 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:32:42,627 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:32:42,638 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:32:42,658 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:32:42,672 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:32:42,673 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 438 ms
+2023-10-23 22:32:43,095 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:32:43,099 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:32:43,113 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:32:43,115 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:32:43,921 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:32:44,140 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:32:44,140 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:32:44,141 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:32:44,142 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:32:44,148 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:33:28,515 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:33:29,286 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:33:29,306 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:33:29,312 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:33:29,840 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1323 ms
+2023-10-23 22:33:29,857 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:33:30,025 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:33:30,047 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:33:30,213 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:33:30,237 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:33:30,248 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:33:30,270 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:33:30,284 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:33:30,284 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 427 ms
+2023-10-23 22:33:30,709 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:33:30,712 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:33:30,726 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:33:30,728 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:33:31,499 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:33:31,726 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:33:31,727 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:33:31,730 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:33:31,730 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:33:31,737 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:34:17,210 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:34:17,969 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:34:17,989 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:34:17,995 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:34:18,510 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1298 ms
+2023-10-23 22:34:18,527 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:34:18,700 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:34:18,722 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:34:18,892 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:34:18,918 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:34:18,929 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:34:18,950 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:34:18,963 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:34:18,964 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 437 ms
+2023-10-23 22:34:19,368 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:34:19,371 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:34:19,386 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:34:19,389 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:34:20,141 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:34:20,355 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:34:20,356 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:34:20,357 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:34:20,357 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:34:20,360 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:34:20,411 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-10-23 22:34:20,416 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-10-23 22:34:20,420 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-10-23 22:34:23,387 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-23 22:34:23,390 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals
+2023-10-23 22:34:23,391 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-23 22:34:24,688 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/users", parameters={}
+2023-10-23 22:34:24,689 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getUsers(Model)
+2023-10-23 22:34:24,770 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'users', model {users=[User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=null, caloriesPerDay=2000}, User{id=100000, email=user@yandex.ru, name=User, enabled=true, roles=null, caloriesPerDay=2000}]}
+2023-10-23 22:34:24,771 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/users.jsp]
+2023-10-23 22:34:24,868 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:34:25,869 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:34:25,871 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:34:25,873 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:34:25,874 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:34:25,881 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:37:01,505 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 22:37:02,279 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 22:37:02,298 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:37:02,305 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 22:37:02,849 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1342 ms
+2023-10-23 22:37:02,868 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 22:37:03,033 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 22:37:03,056 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 22:37:03,232 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:37:03,258 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 22:37:03,270 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 22:37:03,290 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 22:37:03,305 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 22:37:03,305 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 437 ms
+2023-10-23 22:37:03,623 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:37:03,628 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:37:03,643 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:37:03,646 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:37:04,411 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:37:04,741 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 22:37:04,742 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 22:37:04,743 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 22:37:04,743 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 22:37:04,756 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 22:37:04,787 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-10-23 22:37:04,793 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-10-23 22:37:04,799 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED

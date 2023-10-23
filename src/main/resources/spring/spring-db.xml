@@ -119,7 +119,7 @@
     </beans>
 
         <beans profile="tomcat">
-            <jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/topjava"/>
+            <jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/meal"/>
             <context:property-placeholder location="classpath:db/tomcat.properties" system-properties-mode="OVERRIDE"/>
         </beans>
 
