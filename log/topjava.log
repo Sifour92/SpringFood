@@ -1121,3 +1121,642 @@ Stacktrace:
 2023-10-23 22:37:04,787 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
 2023-10-23 22:37:04,793 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
 2023-10-23 22:37:04,799 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-10-23 23:08:29,954 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-23 23:08:30,742 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-23 23:08:30,762 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 23:08:30,769 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-23 23:08:31,357 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1398 ms
+2023-10-23 23:08:31,377 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-23 23:08:31,543 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-23 23:08:31,564 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-23 23:08:31,732 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 23:08:31,757 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-23 23:08:31,767 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-23 23:08:31,775 DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping.detectHandlers:86 - Detected 1 mappings in 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2023-10-23 23:08:31,787 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-23 23:08:31,800 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-23 23:08:31,800 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 423 ms
+2023-10-23 23:08:32,200 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 23:08:32,203 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 23:08:32,216 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 23:08:32,219 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 23:08:32,971 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 23:08:33,271 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-23 23:08:33,272 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-23 23:08:33,273 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-23 23:08:33,273 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-23 23:08:33,274 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-23 23:08:33,316 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-10-23 23:08:33,322 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-10-23 23:08:33,325 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-10-24 11:15:02,571 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-24 11:15:03,379 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-24 11:15:03,398 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:15:03,405 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:15:04,060 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1487 ms
+2023-10-24 11:15:04,080 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-24 11:15:04,251 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 8 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-24 11:15:04,279 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-24 11:15:04,462 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:15:04,488 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:15:04,503 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-24 11:15:04,523 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-24 11:15:04,537 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24 11:15:04,537 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 457 ms
+2023-10-24 11:15:05,107 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:15:05,111 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:15:05,123 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:15:05,125 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:15:05,888 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:06,114 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:15:06,115 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:15:06,116 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:15:06,120 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:15:06,122 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:06,161 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-10-24 11:15:06,166 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-10-24 11:15:06,168 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-10-24 11:15:08,162 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:15:08,164 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:15:08,241 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:15:08,242 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:15:08,341 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:15,716 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/filter?startDate=&endDate=&startTime=&endTime=", parameters={masked}
+2023-10-24 11:15:15,716 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#getBetween(HttpServletRequest, Model)
+2023-10-24 11:15:15,717 INFO  ru.javawebinar.topjava.web.meal.JspMealController.getBetween:60 - getBetween dates(null - null) time(null - null) for user 100000
+2023-10-24 11:15:15,739 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:15:15,739 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:15:15,745 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:15,758 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/resources/css/style.css", parameters={}
+2023-10-24 11:15:15,759 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/resources/css/style.css
+2023-10-24 11:15:15,759 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-24 11:15:17,348 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/meals/filter?startDate=&endDate=&startTime=&endTime=", parameters={masked}
+2023-10-24 11:15:17,351 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/meals/filter
+2023-10-24 11:15:17,352 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-24 11:15:21,506 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/filter?startDate=&endDate=&startTime=&endTime=", parameters={masked}
+2023-10-24 11:15:21,508 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#getBetween(HttpServletRequest, Model)
+2023-10-24 11:15:21,509 INFO  ru.javawebinar.topjava.web.meal.JspMealController.getBetween:60 - getBetween dates(null - null) time(null - null) for user 100000
+2023-10-24 11:15:21,521 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:15:21,522 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:15:21,542 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:21,560 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/resources/css/style.css", parameters={}
+2023-10-24 11:15:21,561 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/resources/css/style.css
+2023-10-24 11:15:21,561 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-24 11:15:25,854 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/create", parameters={}
+2023-10-24 11:15:25,855 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/create
+2023-10-24 11:15:25,856 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-24 11:15:28,671 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/users", parameters={}
+2023-10-24 11:15:28,674 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getUsers(Model)
+2023-10-24 11:15:28,732 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'users', model {users=[User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=null, caloriesPerDay=2000}, User{id=100000, email=user@yandex.ru, name=User, enabled=true, roles=null, caloriesPerDay=2000}]}
+2023-10-24 11:15:28,732 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/users.jsp]
+2023-10-24 11:15:28,799 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:30,046 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:15:30,047 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:15:30,048 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:15:30,048 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:15:30,051 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:32,611 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/users", parameters={masked}
+2023-10-24 11:15:32,612 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#setUser(HttpServletRequest)
+2023-10-24 11:15:32,616 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:15:32,618 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:15:32,659 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:15:32,660 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:15:32,662 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100010, dateTime=2015-06-01T21:00, description='Админ ужин', calories=1500, excess=true}, MealTo{id=100009, dateTime=2015-06-01T14:00, description='Админ ланч', calories=510, excess=true}]}
+2023-10-24 11:15:32,663 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:15:32,666 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:34,110 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/create", parameters={}
+2023-10-24 11:15:34,112 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/create
+2023-10-24 11:15:34,113 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-24 11:15:41,620 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/users", parameters={}
+2023-10-24 11:15:41,621 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getUsers(Model)
+2023-10-24 11:15:41,628 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'users', model {users=[User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=null, caloriesPerDay=2000}, User{id=100000, email=user@yandex.ru, name=User, enabled=true, roles=null, caloriesPerDay=2000}]}
+2023-10-24 11:15:41,629 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/users.jsp]
+2023-10-24 11:15:41,643 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:43,063 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:15:43,064 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:15:43,070 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100010, dateTime=2015-06-01T21:00, description='Админ ужин', calories=1500, excess=true}, MealTo{id=100009, dateTime=2015-06-01T14:00, description='Админ ланч', calories=510, excess=true}]}
+2023-10-24 11:15:43,071 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:15:43,079 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:44,061 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:15:44,062 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:15:44,063 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:15:44,065 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:15:44,070 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:46,026 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/users", parameters={masked}
+2023-10-24 11:15:46,027 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#setUser(HttpServletRequest)
+2023-10-24 11:15:46,028 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:15:46,029 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:15:46,072 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:15:46,072 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:15:46,076 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:15:46,077 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:15:46,082 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:48,348 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:15:48,349 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:15:48,351 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:15:48,351 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:15:48,357 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:51,991 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/users", parameters={masked}
+2023-10-24 11:15:51,992 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#setUser(HttpServletRequest)
+2023-10-24 11:15:51,994 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:15:51,994 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:15:52,049 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:15:52,050 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:15:52,054 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:15:52,054 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:15:52,060 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:15:55,617 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/create", parameters={}
+2023-10-24 11:15:55,618 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/create
+2023-10-24 11:15:55,619 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-24 11:20:07,583 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-24 11:20:08,475 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-24 11:20:08,495 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:20:08,503 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:20:09,070 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1485 ms
+2023-10-24 11:20:09,095 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-24 11:20:09,266 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 8 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-24 11:20:09,287 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-24 11:20:09,456 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:20:09,481 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:20:09,493 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-24 11:20:09,513 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-24 11:20:09,527 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24 11:20:09,527 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 431 ms
+2023-10-24 11:20:09,748 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:20:09,751 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:20:09,765 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:20:09,768 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:20:10,519 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:20:10,745 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:20:10,746 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:20:10,750 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:20:10,750 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:20:10,758 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:20:12,615 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/users", parameters={masked}
+2023-10-24 11:20:12,617 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#setUser(HttpServletRequest)
+2023-10-24 11:20:12,636 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:20:12,638 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:20:12,647 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:20:12,648 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:20:12,693 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:20:12,694 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:20:12,796 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:20:13,988 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/filter?startDate=&endDate=&startTime=&endTime=", parameters={masked}
+2023-10-24 11:20:13,990 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#getBetween(HttpServletRequest, Model)
+2023-10-24 11:20:13,992 INFO  ru.javawebinar.topjava.web.meal.JspMealController.getBetween:60 - getBetween dates(null - null) time(null - null) for user 100000
+2023-10-24 11:20:14,007 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:20:14,009 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:20:14,019 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:20:16,381 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/filter?startDate=&endDate=&startTime=&endTime=", parameters={masked}
+2023-10-24 11:20:16,381 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#getBetween(HttpServletRequest, Model)
+2023-10-24 11:20:16,381 INFO  ru.javawebinar.topjava.web.meal.JspMealController.getBetween:60 - getBetween dates(null - null) time(null - null) for user 100000
+2023-10-24 11:20:16,384 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:20:16,384 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:20:16,389 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:20:20,492 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/create", parameters={}
+2023-10-24 11:20:20,521 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/create
+2023-10-24 11:20:20,521 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-24 11:22:40,629 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-24 11:22:41,495 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-24 11:22:41,516 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:22:41,523 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:22:42,080 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1448 ms
+2023-10-24 11:22:42,103 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-24 11:22:42,277 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 8 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-24 11:22:42,300 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-24 11:22:42,471 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:22:42,496 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:22:42,508 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-24 11:22:42,530 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-24 11:22:42,544 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24 11:22:42,544 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 440 ms
+2023-10-24 11:22:42,815 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:22:42,819 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:22:42,834 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:22:42,837 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:22:43,627 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:22:43,857 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:22:43,858 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:22:43,859 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:22:43,860 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:22:43,866 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:22:45,411 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/users", parameters={masked}
+2023-10-24 11:22:45,413 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#setUser(HttpServletRequest)
+2023-10-24 11:22:45,439 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:22:45,442 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:22:45,455 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:22:45,456 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:22:45,505 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:22:45,505 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:22:45,613 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:22:46,600 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/filter?startDate=&endDate=&startTime=&endTime=", parameters={masked}
+2023-10-24 11:22:46,602 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#getBetween(HttpServletRequest, Model)
+2023-10-24 11:22:46,604 INFO  ru.javawebinar.topjava.web.meal.JspMealController.getBetween:60 - getBetween dates(null - null) time(null - null) for user 100000
+2023-10-24 11:22:46,623 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:22:46,624 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:22:46,631 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:22:47,844 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/create", parameters={}
+2023-10-24 11:22:47,855 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver.logException:200 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-10-24 11:22:47,856 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 405 METHOD_NOT_ALLOWED
+2023-10-24 11:25:08,694 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-24 11:25:09,449 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-24 11:25:09,468 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:25:09,474 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:25:09,992 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1296 ms
+2023-10-24 11:25:10,014 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-24 11:25:10,178 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 8 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-24 11:25:10,200 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-24 11:25:10,362 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:25:10,387 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:25:10,398 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-24 11:25:10,418 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-24 11:25:10,432 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24 11:25:10,433 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 419 ms
+2023-10-24 11:25:10,921 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:25:10,925 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:25:10,937 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:25:10,940 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:25:11,661 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:25:11,865 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:25:11,865 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:25:11,868 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:25:11,868 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:25:11,872 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:25:13,181 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/users", parameters={masked}
+2023-10-24 11:25:13,183 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#setUser(HttpServletRequest)
+2023-10-24 11:25:13,206 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:25:13,208 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:25:13,222 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:25:13,223 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:25:13,276 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:25:13,276 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:25:13,381 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:25:14,670 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/update?id=100008", parameters={masked}
+2023-10-24 11:25:14,672 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#update(HttpServletRequest, Model)
+2023-10-24 11:25:14,674 INFO  ru.javawebinar.topjava.web.meal.JspMealController.get:28 - get meal 100008 for user 100000
+2023-10-24 11:25:14,725 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'mealForm', model {meal=Meal{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510}, org.springframework.validation.BindingResult.meal=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-10-24 11:25:14,726 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/mealForm.jsp]
+2023-10-24 11:25:14,791 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:25:45,771 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/create", parameters={}
+2023-10-24 11:25:45,799 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/create
+2023-10-24 11:25:45,799 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-24 11:25:48,361 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100002", parameters={masked}
+2023-10-24 11:25:48,362 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:25:48,364 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100002 for user 100000
+2023-10-24 11:25:48,366 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:25:48,367 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:25:48,399 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:25:48,400 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:25:48,403 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:25:48,403 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:25:48,410 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:25:49,810 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100003", parameters={masked}
+2023-10-24 11:25:49,811 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:25:49,812 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100003 for user 100000
+2023-10-24 11:25:49,813 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:25:49,813 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:25:49,844 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:25:49,844 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:25:49,849 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:25:49,850 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:25:49,853 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:26:08,189 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100002", parameters={masked}
+2023-10-24 11:26:08,189 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:26:08,190 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100002 for user 100000
+2023-10-24 11:26:08,190 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:26:08,190 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:26:08,193 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:26:08,193 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:26:08,195 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:26:08,196 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:26:08,200 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:26:08,786 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100003", parameters={masked}
+2023-10-24 11:26:08,787 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:26:08,788 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100003 for user 100000
+2023-10-24 11:26:08,789 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:26:08,790 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:26:08,824 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:26:08,825 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:26:08,828 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:26:08,829 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:26:08,832 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:26:09,159 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100004", parameters={masked}
+2023-10-24 11:26:09,161 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:26:09,162 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100004 for user 100000
+2023-10-24 11:26:09,163 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:26:09,164 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:26:09,202 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:26:09,202 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:26:09,216 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:26:09,216 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:26:09,218 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:26:10,105 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100005", parameters={masked}
+2023-10-24 11:26:10,107 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:26:10,107 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100005 for user 100000
+2023-10-24 11:26:10,109 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:26:10,109 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:26:10,166 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:26:10,166 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:26:10,170 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:26:10,171 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:26:10,174 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:26:30,989 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-24 11:26:31,785 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-24 11:26:31,805 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:26:31,812 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:26:32,335 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1344 ms
+2023-10-24 11:26:32,357 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-24 11:26:32,534 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 8 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-24 11:26:32,556 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-24 11:26:32,733 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:26:32,760 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:26:32,772 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-24 11:26:32,793 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-24 11:26:32,807 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24 11:26:32,808 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 451 ms
+2023-10-24 11:26:33,175 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:26:33,178 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:26:33,191 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:26:33,194 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:26:34,005 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:26:34,205 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:26:34,206 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:26:34,207 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:26:34,208 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:26:34,218 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:26:36,621 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/users", parameters={masked}
+2023-10-24 11:26:36,623 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#setUser(HttpServletRequest)
+2023-10-24 11:26:36,645 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:26:36,646 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:26:36,655 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:26:36,656 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:26:36,704 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:26:36,705 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:26:36,814 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:26:38,392 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100002", parameters={masked}
+2023-10-24 11:26:38,394 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:26:38,397 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100002 for user 100000
+2023-10-24 11:26:38,399 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:26:38,400 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:26:38,428 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/meals", parameters={}
+2023-10-24 11:26:38,432 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/meals
+2023-10-24 11:26:38,433 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-24 11:26:43,501 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/update?id=100002", parameters={masked}
+2023-10-24 11:26:43,502 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#update(HttpServletRequest, Model)
+2023-10-24 11:26:43,504 INFO  ru.javawebinar.topjava.web.meal.JspMealController.get:28 - get meal 100002 for user 100000
+2023-10-24 11:26:43,551 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'mealForm', model {meal=Meal{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500}, org.springframework.validation.BindingResult.meal=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-10-24 11:26:43,551 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/mealForm.jsp]
+2023-10-24 11:26:43,607 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:27:05,745 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-24 11:27:06,524 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-24 11:27:06,543 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:27:06,549 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:27:07,090 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1343 ms
+2023-10-24 11:27:07,112 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-24 11:27:07,278 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 8 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-24 11:27:07,299 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-24 11:27:07,465 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:27:07,490 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:27:07,501 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-24 11:27:07,522 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-24 11:27:07,536 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24 11:27:07,537 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 425 ms
+2023-10-24 11:27:07,858 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:27:07,861 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:27:07,874 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:27:07,877 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:27:08,630 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:27:08,839 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:27:08,840 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:27:08,841 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:27:08,841 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:27:08,846 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:27:10,404 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/users", parameters={masked}
+2023-10-24 11:27:10,406 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#setUser(HttpServletRequest)
+2023-10-24 11:27:10,430 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:27:10,432 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:27:10,443 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:27:10,443 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:27:10,496 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:27:10,497 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:27:10,612 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:27:11,930 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/filter?startDate=&endDate=&startTime=&endTime=", parameters={masked}
+2023-10-24 11:27:11,932 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#getBetween(HttpServletRequest, Model)
+2023-10-24 11:27:11,934 INFO  ru.javawebinar.topjava.web.meal.JspMealController.getBetween:60 - getBetween dates(null - null) time(null - null) for user 100000
+2023-10-24 11:27:11,951 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:27:11,953 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:27:11,960 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:27:14,110 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/create", parameters={}
+2023-10-24 11:27:14,122 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/create
+2023-10-24 11:27:14,122 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-24 11:28:49,088 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:28:49,089 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:28:49,091 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:28:49,091 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:28:49,101 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:28:49,814 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:28:49,814 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:28:49,815 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:28:49,816 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:28:49,817 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:10,209 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-24 11:36:10,240 DEBUG o.s.web.context.support.XmlWebApplicationContext.prepareRefresh:596 - Refreshing Root WebApplicationContext
+2023-10-24 11:36:10,434 DEBUG o.s.web.context.support.StandardServletEnvironment.setActiveProfiles:252 - Activating profiles [jdbc, postgres]
+2023-10-24 11:36:10,974 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-24 11:36:10,993 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:36:11,000 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:36:11,569 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1358 ms
+2023-10-24 11:36:11,580 DEBUG o.s.web.filter.CharacterEncodingFilter.init:242 - Filter 'encodingFilter' configured for use
+2023-10-24 11:36:11,592 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-24 11:36:11,594 DEBUG o.s.web.context.support.XmlWebApplicationContext.prepareRefresh:596 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet'
+2023-10-24 11:36:11,764 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 8 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-24 11:36:11,788 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-24 11:36:11,952 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:36:11,975 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:36:11,986 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-24 11:36:12,007 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-24 11:36:12,023 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24 11:36:12,023 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 430 ms
+2023-10-24 11:36:12,326 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:36:12,329 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:36:12,342 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:36:12,345 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:36:13,112 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:13,341 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:36:13,342 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:36:13,345 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:36:13,346 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:36:13,356 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:14,759 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/users", parameters={masked}
+2023-10-24 11:36:14,760 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#setUser(HttpServletRequest)
+2023-10-24 11:36:14,776 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:36:14,777 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:36:14,782 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:36:14,782 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:36:14,853 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:36:14,854 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:36:14,969 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:16,261 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/filter?startDate=&endDate=&startTime=&endTime=", parameters={masked}
+2023-10-24 11:36:16,263 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#getBetween(HttpServletRequest, Model)
+2023-10-24 11:36:16,266 INFO  ru.javawebinar.topjava.web.meal.JspMealController.getBetween:60 - getBetween dates(null - null) time(null - null) for user 100000
+2023-10-24 11:36:16,281 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:36:16,283 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:36:16,292 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:18,627 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/filter?startDate=&endDate=&startTime=&endTime=", parameters={masked}
+2023-10-24 11:36:18,627 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#getBetween(HttpServletRequest, Model)
+2023-10-24 11:36:18,627 INFO  ru.javawebinar.topjava.web.meal.JspMealController.getBetween:60 - getBetween dates(null - null) time(null - null) for user 100000
+2023-10-24 11:36:18,630 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:36:18,631 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:36:18,635 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:22,177 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/create", parameters={}
+2023-10-24 11:36:22,204 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/create
+2023-10-24 11:36:22,204 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND
+2023-10-24 11:36:28,504 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100008", parameters={masked}
+2023-10-24 11:36:28,505 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:36:28,507 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100008 for user 100000
+2023-10-24 11:36:28,508 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:36:28,510 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:36:28,565 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:36:28,566 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:36:28,571 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:36:28,572 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:36:28,580 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:29,781 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100008", parameters={masked}
+2023-10-24 11:36:29,783 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:36:29,784 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100008 for user 100000
+2023-10-24 11:36:29,786 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:36:29,787 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:36:29,827 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:36:29,827 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:36:29,831 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:36:29,832 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:36:29,835 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:31,232 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100002", parameters={masked}
+2023-10-24 11:36:31,233 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:36:31,234 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100002 for user 100000
+2023-10-24 11:36:31,235 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:36:31,236 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:36:31,292 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:36:31,293 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:36:31,297 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:36:31,298 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:36:31,302 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:32,178 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100002", parameters={masked}
+2023-10-24 11:36:32,179 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:36:32,180 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100002 for user 100000
+2023-10-24 11:36:32,181 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:36:32,182 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:36:32,230 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:36:32,231 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:36:32,236 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:36:32,236 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:36:32,240 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:32,435 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100002", parameters={masked}
+2023-10-24 11:36:32,436 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:36:32,436 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100002 for user 100000
+2023-10-24 11:36:32,437 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:36:32,437 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:36:32,463 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:36:32,464 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:36:32,480 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:36:32,480 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:36:32,483 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:33,261 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/update?id=100003", parameters={masked}
+2023-10-24 11:36:33,263 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#update(HttpServletRequest, Model)
+2023-10-24 11:36:33,264 INFO  ru.javawebinar.topjava.web.meal.JspMealController.get:28 - get meal 100003 for user 100000
+2023-10-24 11:36:33,302 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'mealForm', model {meal=Meal{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000}, org.springframework.validation.BindingResult.meal=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-10-24 11:36:33,303 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/mealForm.jsp]
+2023-10-24 11:36:33,361 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:38,935 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/meals", parameters={masked}
+2023-10-24 11:36:38,936 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#updateOrCreate(HttpServletRequest)
+2023-10-24 11:36:38,938 INFO  ru.javawebinar.topjava.web.meal.JspMealController.update:53 - update Meal{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=100} for user 100000
+2023-10-24 11:36:38,969 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:36:38,969 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:36:38,973 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:36:38,973 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:36:38,975 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=100, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:36:38,975 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:36:38,979 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:41,725 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/update?id=100002", parameters={masked}
+2023-10-24 11:36:41,726 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#update(HttpServletRequest, Model)
+2023-10-24 11:36:41,727 INFO  ru.javawebinar.topjava.web.meal.JspMealController.get:28 - get meal 100002 for user 100000
+2023-10-24 11:36:41,731 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'mealForm', model {meal=Meal{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500}, org.springframework.validation.BindingResult.meal=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-10-24 11:36:41,732 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/mealForm.jsp]
+2023-10-24 11:36:41,740 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:36:44,755 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/meals", parameters={masked}
+2023-10-24 11:36:44,756 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#updateOrCreate(HttpServletRequest)
+2023-10-24 11:36:44,756 INFO  ru.javawebinar.topjava.web.meal.JspMealController.update:53 - update Meal{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=5000} for user 100000
+2023-10-24 11:36:44,762 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:36:44,763 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:36:44,775 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:36:44,775 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:36:44,779 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=true}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=100, excess=true}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=5000, excess=true}]}
+2023-10-24 11:36:44,779 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:36:44,785 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:38:51,746 DEBUG o.s.web.context.support.XmlWebApplicationContext.doClose:1006 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet', started on Tue Oct 24 11:36:11 MSK 2023, parent: Root WebApplicationContext
+2023-10-24 11:39:53,273 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-24 11:39:53,305 DEBUG o.s.web.context.support.XmlWebApplicationContext.prepareRefresh:596 - Refreshing Root WebApplicationContext
+2023-10-24 11:39:53,504 DEBUG o.s.web.context.support.StandardServletEnvironment.setActiveProfiles:252 - Activating profiles [jdbc, postgres]
+2023-10-24 11:39:54,050 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-24 11:39:54,070 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:39:54,077 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-24 11:39:54,639 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1363 ms
+2023-10-24 11:39:54,651 DEBUG o.s.web.filter.CharacterEncodingFilter.init:242 - Filter 'encodingFilter' configured for use
+2023-10-24 11:39:54,663 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-24 11:39:54,665 DEBUG o.s.web.context.support.XmlWebApplicationContext.prepareRefresh:596 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet'
+2023-10-24 11:39:54,834 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 8 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-24 11:39:54,856 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-24 11:39:55,025 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:39:55,049 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-24 11:39:55,060 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-24 11:39:55,082 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-24 11:39:55,096 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24 11:39:55,097 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 434 ms
+2023-10-24 11:39:55,445 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:39:55,448 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:39:55,462 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:39:55,464 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:39:56,219 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:39:56,429 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-24 11:39:56,430 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-24 11:39:56,431 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-24 11:39:56,433 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-24 11:39:56,436 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:39:57,938 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - POST "/topjava_war_exploded/users", parameters={masked}
+2023-10-24 11:39:57,940 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#setUser(HttpServletRequest)
+2023-10-24 11:39:57,962 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:39:57,963 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:39:57,977 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:39:57,978 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:39:58,033 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}, MealTo{id=100002, dateTime=2015-05-30T10:00, description='Завтрак', calories=500, excess=false}]}
+2023-10-24 11:39:58,034 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:39:58,135 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:39:59,136 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100002", parameters={masked}
+2023-10-24 11:39:59,138 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:39:59,140 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100002 for user 100000
+2023-10-24 11:39:59,154 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:39:59,155 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:39:59,181 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:39:59,181 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:39:59,184 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100005, dateTime=2015-05-31T00:00, description='Еда на граничное значение', calories=100, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}]}
+2023-10-24 11:39:59,185 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:39:59,188 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:40:00,430 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/delete?id=100005", parameters={masked}
+2023-10-24 11:40:00,432 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#delete(HttpServletRequest)
+2023-10-24 11:40:00,433 INFO  ru.javawebinar.topjava.web.meal.JspMealController.delete:34 - delete meal 100005 for user 100000
+2023-10-24 11:40:00,441 DEBUG org.springframework.web.servlet.view.RedirectView.render:309 - View name 'redirect:', model {}
+2023-10-24 11:40:00,442 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 302 FOUND
+2023-10-24 11:40:00,472 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals", parameters={}
+2023-10-24 11:40:00,473 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#getMeals(Model)
+2023-10-24 11:40:00,479 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}]}
+2023-10-24 11:40:00,480 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:40:00,488 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:40:02,165 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/filter?startDate=&endDate=&startTime=&endTime=", parameters={masked}
+2023-10-24 11:40:02,167 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.meal.JspMealController#getBetween(HttpServletRequest, Model)
+2023-10-24 11:40:02,168 INFO  ru.javawebinar.topjava.web.meal.JspMealController.getBetween:61 - getBetween dates(null - null) time(null - null) for user 100000
+2023-10-24 11:40:02,202 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'meals', model {meals=[MealTo{id=100008, dateTime=2015-05-31T20:00, description='Ужин', calories=510, excess=true}, MealTo{id=100007, dateTime=2015-05-31T13:00, description='Обед', calories=1000, excess=true}, MealTo{id=100006, dateTime=2015-05-31T10:00, description='Завтрак', calories=500, excess=true}, MealTo{id=100004, dateTime=2015-05-30T20:00, description='Ужин', calories=500, excess=false}, MealTo{id=100003, dateTime=2015-05-30T13:00, description='Обед', calories=1000, excess=false}]}
+2023-10-24 11:40:02,203 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
+2023-10-24 11:40:02,207 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-24 11:40:04,364 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/meals/create", parameters={}
+2023-10-24 11:40:04,373 WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound:1254 - No mapping for GET /topjava_war_exploded/meals/create
+2023-10-24 11:40:04,374 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 404 NOT_FOUND

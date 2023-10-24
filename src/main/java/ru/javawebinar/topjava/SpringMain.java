@@ -23,10 +23,10 @@ import java.util.Arrays;
 public class SpringMain {
     public static void main(String[] args) {
         // java 7 automatic resource management
-                try (GenericXmlApplicationContext context = new GenericXmlApplicationContext()) {
-                    context.getEnvironment().setActiveProfiles(Profiles.getActiveDbProfile(), Profiles.REPOSITORY_IMPLEMENTATION);
-                    context.load("spring/spring-app.xml", "spring/spring-db.xml");
-                    context.refresh();
+        try (GenericXmlApplicationContext context = new GenericXmlApplicationContext()) {
+            context.getEnvironment().setActiveProfiles(Profiles.getActiveDbProfile(), Profiles.REPOSITORY_IMPLEMENTATION);
+            context.load("spring/spring-app.xml", "spring/inmemory.xml");
+            context.refresh();
 
 
             System.out.println("Bean definition names: " +

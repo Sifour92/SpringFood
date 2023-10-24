@@ -2,11 +2,12 @@ package ru.javawebinar.topjava.repository;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 
 import javax.persistence.PersistenceContext;
-
+//@Repository
 public class JpaUtil {
 
     @PersistenceContext

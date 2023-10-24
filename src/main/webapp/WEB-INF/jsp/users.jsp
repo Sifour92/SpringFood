@@ -2,14 +2,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%--локализация--%>
-<fmt:setBundle basename="messages.app"/>
-
 
 <html>
 <jsp:include page="../../fragments/headTag.jsp"/>
 <body>
 
 <jsp:include page="../../fragments/bodyHeader.jsp"/>
+
 <section>
        <h3><spring:message code="user.title"/></h3>
         <table border="1" cellpadding="8" cellspacing="0">
