@@ -31,7 +31,9 @@
         <button type="submit"><spring:message code="meal.filter"/></button>
     </form>
     <hr>
+
     <a href="meals/create"><spring:message code="meal.add"/></a>
+
     <hr>
     <table border="1" cellpadding="8" cellspacing="0">
         <thead>
