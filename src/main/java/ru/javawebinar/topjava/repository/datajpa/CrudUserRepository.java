@@ -1,6 +1,7 @@
 package ru.javawebinar.topjava.repository.datajpa;
 
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -29,6 +30,10 @@ public interface CrudUserRepository extends JpaRepository<User, Integer> {
     @Override
     List<User> findAll(Sort sort);
 
+
+
+    //    https://stackoverflow.com/a/46013654/548473
+    @EntityGraph(attributePaths = {"meals"}, type = EntityGraph.EntityGraphType.LOAD)
     @Query("SELECT u FROM User u LEFT JOIN FETCH u.meals WHERE u.id = ?1")
     User getWithMeals(int id);
 

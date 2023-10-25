@@ -1914,3 +1914,35 @@ Stacktrace:
 2023-10-24 11:57:30,899 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/meals.jsp]
 2023-10-24 11:57:30,903 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
 2023-10-24 12:08:05,194 DEBUG o.s.web.context.support.XmlWebApplicationContext.doClose:1006 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet', started on Tue Oct 24 11:57:05 MSK 2023, parent: Root WebApplicationContext
+2023-10-25 09:56:17,068 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-10-25 09:56:17,101 DEBUG o.s.web.context.support.XmlWebApplicationContext.prepareRefresh:596 - Refreshing Root WebApplicationContext
+2023-10-25 09:56:17,327 DEBUG o.s.web.context.support.StandardServletEnvironment.setActiveProfiles:252 - Activating profiles [jdbc, postgres]
+2023-10-25 09:56:17,892 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-10-25 09:56:17,912 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-25 09:56:17,919 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-10-25 09:56:18,500 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1429 ms
+2023-10-25 09:56:18,513 DEBUG o.s.web.filter.CharacterEncodingFilter.init:242 - Filter 'encodingFilter' configured for use
+2023-10-25 09:56:18,534 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-10-25 09:56:18,536 DEBUG o.s.web.context.support.XmlWebApplicationContext.prepareRefresh:596 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet'
+2023-10-25 09:56:18,740 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 9 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-10-25 09:56:18,767 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-10-25 09:56:18,961 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-25 09:56:18,987 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:611 - ControllerAdvice beans: none
+2023-10-25 09:56:19,006 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:294 - ControllerAdvice beans: none
+2023-10-25 09:56:19,030 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-10-25 09:56:19,046 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-25 09:56:19,046 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 512 ms
+2023-10-25 09:56:19,176 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-25 09:56:19,181 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-25 09:56:19,199 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-25 09:56:19,202 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-25 09:56:20,007 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-25 09:56:22,069 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-10-25 09:56:22,070 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-10-25 09:56:22,071 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-10-25 09:56:22,072 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-10-25 09:56:22,078 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-10-25 09:56:22,170 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-10-25 09:56:22,179 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-10-25 09:56:22,182 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-10-25 09:56:28,473 DEBUG o.s.web.context.support.XmlWebApplicationContext.doClose:1006 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet', started on Wed Oct 25 09:56:18 MSK 2023, parent: Root WebApplicationContext

@@ -24,6 +24,7 @@ import static ru.javawebinar.topjava.util.DateTimeUtil.getEndExclusive;
 import static ru.javawebinar.topjava.util.DateTimeUtil.getStartInclusive;
 
 @Repository
+@Transactional(readOnly = true)
 public class JdbcMealRepository implements MealRepository {
 
     private static final RowMapper<Meal> ROW_MAPPER = BeanPropertyRowMapper.newInstance(Meal.class);
@@ -42,7 +43,7 @@ public class JdbcMealRepository implements MealRepository {
         this.jdbcTemplate = jdbcTemplate;
         this.namedParameterJdbcTemplate = namedParameterJdbcTemplate;
     }
-
+    @Transactional
     @Override
     public Meal save(Meal meal, int userId) {
 
@@ -68,6 +69,7 @@ public class JdbcMealRepository implements MealRepository {
         return meal;
     }
 
+    @Transactional
     @Override
     public boolean delete(int id, int userId) {
         return jdbcTemplate.update("DELETE FROM meals WHERE id=? AND user_id=?", id, userId) != 0;
