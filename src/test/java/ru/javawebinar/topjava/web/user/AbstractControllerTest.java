@@ -1,7 +1,6 @@
 package ru.javawebinar.topjava.web.user;
 
-import org.junit.Before;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
 import org.springframework.test.context.ActiveProfiles;
@@ -15,16 +14,17 @@ import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import ru.javawebinar.topjava.AllActiveProfileResolver;
 import ru.javawebinar.topjava.repository.JpaUtil;
-
+import org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig;
 import javax.annotation.PostConstruct;
 
-@ContextConfiguration({
+@SpringJUnitWebConfig(locations = {
         "classpath:spring/spring-app.xml",
         "classpath:spring/spring-mvc.xml",
         "classpath:spring/spring-db.xml"
 })
-@WebAppConfiguration
-@RunWith(SpringJUnit4ClassRunner.class)
+
+//@WebAppConfiguration
+//@ExtendWith(SpringExtension.class)
 @Transactional //перед каждым тестом транзакция начинается - после тестов - откат
 //минусы - транзакция в транзакции
 //может быт ьмного ошибок
@@ -55,7 +55,7 @@ abstract public class AbstractControllerTest {
                 .build();
     }
 
-    @Before
+    @BeforeEach
     public void setUp() {
         cacheManager.getCache("users").clear();
         if (jpaUtil != null) {

@@ -1,57 +1,45 @@
 package ru.javawebinar.topjava.service;
 
-import org.junit.Rule;
-import org.junit.rules.ExpectedException;
-import org.junit.rules.Stopwatch;
-import org.junit.runner.RunWith;
+
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Profile;
 import org.springframework.core.env.Environment;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.SqlConfig;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import ru.javawebinar.topjava.ActiveDbProfileResolver;
 import ru.javawebinar.topjava.Profiles;
-import ru.javawebinar.topjava.TimingRules;
-import org.junit.Assert;
+import ru.javawebinar.topjava.TimingExtension;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static ru.javawebinar.topjava.util.ValidationUtil.getRootCause;
 
 
-@ContextConfiguration({
+@SpringJUnitConfig(locations = {
         "classpath:spring/spring-app.xml",
         "classpath:spring/spring-db.xml"
 })
-@RunWith(SpringRunner.class)
-@Sql(scripts = "classpath:db/populateDB.sql", config = @SqlConfig(encoding = "UTF-8"))
+@Sql(scripts = "classpath:db/populateDB.sql",config = @SqlConfig(encoding = "UTF-8"))
 @ActiveProfiles(resolver = ActiveDbProfileResolver.class)
-abstract public class AbstractServiceTest {
+@ExtendWith(TimingExtension.class)
+abstract class AbstractServiceTest {
     @Autowired
-    public Environment env;
+    private Environment env;
 
-    public boolean isJpaBased() {
-        //        return Arrays.stream(env.getActiveProfiles()).noneMatch(Profiles.JDBC::equals);
+    boolean isJpaBased() {
         return env.acceptsProfiles(org.springframework.core.env.Profiles.of(Profiles.JPA, Profiles.DATAJPA));
     }
 
-    @Rule
-    public ExpectedException thrown = ExpectedException.none();
-
     //  Check root cause in JUnit: https://github.com/junit-team/junit4/pull/778
-    public <T extends Throwable> void validateRootCause(Runnable runnable, Class<T> exceptionClass) {
-        try {
-            runnable.run();
-            Assert.fail("Expected " + exceptionClass.getName());
-        } catch (Exception e) {
-            Assert.assertThat(getRootCause(e), instanceOf(exceptionClass));
-        }
+    <T extends Throwable> void validateRootCause(Runnable runnable, Class<T> exceptionClass) {
+        assertThrows(exceptionClass, () -> {
+            try {
+                runnable.run();
+            } catch (Exception e) {
+                throw getRootCause(e);
+            }
+        });
     }
-
-    @Rule
-    // http://stackoverflow.com/questions/14892125/what-is-the-best-practice-to-determine-the-execution-time-of-the-bussiness-relev
-    public Stopwatch stopwatch = TimingRules.STOPWATCH;
-
 }
