@@ -12,6 +12,7 @@ import org.springframework.data.domain.Persistable;
 // и всех классах-наследниках по полям.
 // При загрузке `Meal` Hibernate на основе поля `meal.user_id`
 // делает ленивую прокcи к `User`, у которой нет ничего, кроме id.
+//@JsonAutoDetect(fieldVisibility = ANY, getterVisibility = NONE, isGetterVisibility = NONE, setterVisibility = NONE)
 public abstract class AbstractBaseEntity implements Persistable<Integer>{
     public static final int START_SEQ = 100000;
 
