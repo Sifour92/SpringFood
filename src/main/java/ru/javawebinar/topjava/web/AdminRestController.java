@@ -1,10 +1,9 @@
-package ru.javawebinar.topjava.web.user;
+package ru.javawebinar.topjava.web;
 
 import ru.javawebinar.topjava.model.User;
 
 import java.util.List;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +15,7 @@ import java.net.URI;
 @RestController
 @RequestMapping(value = AdminRestController.REST_URL, produces = MediaType.APPLICATION_JSON_VALUE)
 public class AdminRestController extends AbstractUserController {
-    static final String REST_URL = "rest/admin/users";
+    public static final String REST_URL = "rest/admin/users";
 
     @Override
     @GetMapping

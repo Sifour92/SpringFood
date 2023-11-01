@@ -2071,7 +2071,7 @@ Stacktrace:
 2023-10-31 23:31:43,465 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
 2023-10-31 23:31:43,466 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
 2023-10-31 23:32:02,352 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/rest/admin/users", parameters={}
-2023-10-31 23:32:02,353 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.user.AdminRestController#getAll()
+2023-10-31 23:32:02,353 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to AdminRestController#getAll()
 2023-10-31 23:32:02,354 INFO  r.javawebinar.topjava.web.user.AdminRestController.getAll:21 - getAll
 2023-10-31 23:32:02,361 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor.writeWithMessageConverters:255 - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json]
 2023-10-31 23:32:02,371 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor.traceDebug:119 - Writing [[User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=[ROLE_USER, ROLE_ADMIN], cal (truncated)...]
@@ -2109,7 +2109,7 @@ Stacktrace:
 2023-10-31 23:56:40,731 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
 2023-10-31 23:56:40,743 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
 2023-10-31 23:57:13,650 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/rest/admin/users/100001", parameters={}
-2023-10-31 23:57:13,652 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.user.AdminRestController#get(int)
+2023-10-31 23:57:13,652 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to AdminRestController#get(int)
 2023-10-31 23:57:13,664 INFO  r.javawebinar.topjava.web.user.AdminRestController.get:26 - get 100001
 2023-10-31 23:57:13,716 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor.writeWithMessageConverters:255 - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json]
 2023-10-31 23:57:13,772 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor.traceDebug:119 - Writing [User{id=100001, email=admin@gmail.com, name=Admin, enabled=true, roles=[ROLE_USER, ROLE_ADMIN], calo (truncated)...]

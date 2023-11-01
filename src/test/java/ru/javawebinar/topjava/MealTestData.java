@@ -25,6 +25,7 @@ public class MealTestData {
     public static final Meal MEAL5 = new Meal(MEAL1_ID + 4, of(2015, Month.MAY, 31, 10, 0), "Завтрак", 500);
     public static final Meal MEAL6 = new Meal(MEAL1_ID + 5, of(2015, Month.MAY, 31, 13, 0), "Обед", 1000);
     public static final Meal MEAL7 = new Meal(MEAL1_ID + 6, of(2015, Month.MAY, 31, 20, 0), "Ужин", 510);
+
     public static final Meal ADMIN_MEAL1 = new Meal(ADMIN_MEAL_ID, of(2015, Month.JUNE, 1, 14, 0), "Админ ланч", 510);
     public static final Meal ADMIN_MEAL2 = new Meal(ADMIN_MEAL_ID + 1, of(2015, Month.JUNE, 1, 21, 0), "Админ ужин", 1500);
 

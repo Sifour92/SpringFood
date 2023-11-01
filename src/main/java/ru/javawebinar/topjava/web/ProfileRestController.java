@@ -1,4 +1,4 @@
-package ru.javawebinar.topjava.web.user;
+package ru.javawebinar.topjava.web;
 
 import ru.javawebinar.topjava.model.User;
 
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(ProfileRestController.REST_URL)
 public class ProfileRestController extends AbstractUserController {
-    static final String REST_URL = "/rest/profile";
+    public static final String REST_URL = "/rest/profile";
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public User get() {

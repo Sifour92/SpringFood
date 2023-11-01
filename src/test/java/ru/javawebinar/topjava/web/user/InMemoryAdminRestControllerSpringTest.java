@@ -3,15 +3,10 @@ package ru.javawebinar.topjava.web.user;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
-import org.springframework.test.context.junit4.SpringRunner;
-import ru.javawebinar.topjava.UserTestData;
-import ru.javawebinar.topjava.model.User;
 import ru.javawebinar.topjava.repository.inmemory.InMemoryUserRepository;
 import ru.javawebinar.topjava.util.exception.NotFoundException;
-
-import java.util.Collection;
+import ru.javawebinar.topjava.web.AdminRestController;
 
 import static ru.javawebinar.topjava.UserTestData.USER_ID;
 import static org.junit.jupiter.api.Assertions.assertThrows;

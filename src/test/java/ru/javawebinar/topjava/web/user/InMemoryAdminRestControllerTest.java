@@ -2,8 +2,6 @@ package ru.javawebinar.topjava.web.user;
 
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ru.javawebinar.topjava.UserTestData;
-import ru.javawebinar.topjava.model.User;
 import ru.javawebinar.topjava.repository.inmemory.InMemoryUserRepository;
 import ru.javawebinar.topjava.util.exception.NotFoundException;
 import org.junit.jupiter.api.AfterAll;
@@ -16,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ru.javawebinar.topjava.web.AdminRestController;
 
 import static ru.javawebinar.topjava.UserTestData.USER_ID;
 
