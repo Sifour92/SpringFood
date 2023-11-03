@@ -9,7 +9,6 @@ import ru.javawebinar.topjava.UserTestData;
 import ru.javawebinar.topjava.model.User;
 import ru.javawebinar.topjava.service.UserService;
 import ru.javawebinar.topjava.util.exception.NotFoundException;
-import ru.javawebinar.topjava.web.AdminRestController;
 import ru.javawebinar.topjava.web.json.JsonUtil;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -80,13 +79,13 @@ class AdminRestControllerTest extends AbstractControllerTest {
     }
 
 
-//    @Test
-//    void getAll() throws Exception {
-//        mockMvc.perform(MockMvcRequestBuilders.get(REST_URL))
-//                .andExpect(status().isOk())
-//                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-//                .andExpect(contentJson(ADMIN, USER));
-//    }
+    @Test
+    void getAll() throws Exception {
+        mockMvc.perform(MockMvcRequestBuilders.get(REST_URL))
+                .andExpect(status().isOk())
+                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                .andExpect(contentJson(ADMIN, USER));
+    }
 }
 
 

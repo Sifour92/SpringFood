@@ -14,7 +14,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ru.javawebinar.topjava.web.AdminRestController;
 
 import static ru.javawebinar.topjava.UserTestData.USER_ID;
 

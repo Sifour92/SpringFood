@@ -28,7 +28,8 @@ public class TimingExtension implements BeforeTestExecutionCallback, AfterTestEx
 
     @Override
     public void beforeTestExecution(ExtensionContext extensionContext) throws Exception {
-        log.info("Start stopWatch");
-        stopWatch.start(extensionContext.getDisplayName());
+                String testName = extensionContext.getDisplayName();
+                log.info("\nStart " + testName);
+                stopWatch.start(testName);
     }
 }

@@ -1,5 +1,6 @@
 package ru.javawebinar.topjava.to;
 
+import java.beans.ConstructorProperties;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -12,7 +13,7 @@ public class MealTo {
     private final int calories;
 
     private final boolean excess;
-
+    @ConstructorProperties({"id", "dateTime", "description", "calories", "excess"})
     public MealTo(Integer id, LocalDateTime dateTime, String description, int calories, boolean excess) {
         this.id = id;
         this.dateTime = dateTime;
@@ -45,8 +46,12 @@ public class MealTo {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        MealTo mealTo = (MealTo) o;
-        return calories == mealTo.calories && excess == mealTo.excess && Objects.equals(id, mealTo.id) && Objects.equals(dateTime, mealTo.dateTime) && Objects.equals(description, mealTo.description);
+        MealTo that = (MealTo) o;
+        return calories == that.calories &&
+                excess == that.excess &&
+                Objects.equals(id, that.id) &&
+                Objects.equals(dateTime, that.dateTime) &&
+                Objects.equals(description, that.description);
     }
 
     @Override

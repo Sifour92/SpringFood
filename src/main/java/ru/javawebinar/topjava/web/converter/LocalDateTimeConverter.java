@@ -1,4 +1,4 @@
-package ru.javawebinar.topjava.model.converter;
+package ru.javawebinar.topjava.web.converter;
 
 
 import javax.persistence.AttributeConverter;

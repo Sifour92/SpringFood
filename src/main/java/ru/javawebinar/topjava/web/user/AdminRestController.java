@@ -1,4 +1,4 @@
-package ru.javawebinar.topjava.web;
+package ru.javawebinar.topjava.web.user;
 
 import ru.javawebinar.topjava.model.User;
 
@@ -18,17 +18,16 @@ public class AdminRestController extends AbstractUserController {
     public static final String REST_URL = "rest/admin/users";
 
     @Override
-    @GetMapping
-    public List<User> getAll() {
-        return super.getAll();
-    }
-
-    @Override
     @GetMapping("/{id}")
     public User get(@PathVariable int id) {
         return super.get(id);
     }
 
+    @Override
+    @GetMapping
+    public List<User> getAll() {
+        return super.getAll();
+    }
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> createWithLocation(@RequestBody User user) {
