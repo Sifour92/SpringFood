@@ -5,6 +5,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 import ru.javawebinar.topjava.to.MealTo;
 import ru.javawebinar.topjava.web.meal.MealRestController;
 import ru.javawebinar.topjava.web.user.AdminRestController;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -16,19 +17,16 @@ import java.util.List;
 public class SpringMain {
     public static void main(String[] args) {
         // java 7 automatic resource management
-        try (GenericXmlApplicationContext context = new GenericXmlApplicationContext()) {
-            context.getEnvironment().setActiveProfiles(Profiles.getActiveDbProfile(), Profiles.REPOSITORY_IMPLEMENTATION);
-            context.load("spring/spring-app.xml", "spring/inmemory.xml");
-            context.refresh();
+        try (ClassPathXmlApplicationContext appCtx = new ClassPathXmlApplicationContext("spring/spring-app.xml", "spring/inmemory.xml")) {
 
 
             System.out.println("Bean definition names: " +
-                    Arrays.toString(context.getBeanDefinitionNames()));
-            AdminRestController adminUserController = context.getBean(AdminRestController.class);
+                    Arrays.toString(appCtx.getBeanDefinitionNames()));
+            AdminRestController adminUserController = appCtx.getBean(AdminRestController.class);
             adminUserController.getAll();
             System.out.println();
 
-            MealRestController mealController = context.getBean(MealRestController.class);
+            MealRestController mealController = appCtx.getBean(MealRestController.class);
             List<MealTo> filteredMealsWithExcess =
                     mealController.getBetween(
                             LocalDate.of(2015, Month.MAY, 30), LocalTime.of(7, 0),
