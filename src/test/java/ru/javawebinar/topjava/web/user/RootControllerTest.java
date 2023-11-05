@@ -45,7 +45,8 @@ class RootControllerTest extends AbstractControllerTest {
 //        return "meals";
 //    }
 
-
+// Сравнение происходит через `MealTo.equals()`,
+// который мы можем переопределить, т.к. он Transfer Object, не является сущностью (Entity).
     @Test
     public void getMeals() throws Exception {
         mockMvc.perform(get("/meals"))

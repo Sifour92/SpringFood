@@ -25,7 +25,7 @@ import static ru.javawebinar.topjava.util.MealsUtil.getTos;
 
 class MealRestControllerTest extends AbstractControllerTest {
 
-    private static final String REST_URL = '/' + MealRestController.REST_URL + '/';
+    private static final String REST_URL = "/rest/profile/meals/";
 
     @Autowired
     private MealService mealService;
@@ -33,8 +33,8 @@ class MealRestControllerTest extends AbstractControllerTest {
     @Test
     void get() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get(REST_URL + MEAL1_ID))
-                .andExpect(status().isOk())
                 .andDo(print())
+                .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
                 .andExpect(result -> assertMatch(readFromJsonMvcResult(result, Meal.class), MEAL1));
     }

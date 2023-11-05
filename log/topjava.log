@@ -3779,3 +3779,430 @@ org.springframework.security.access.AccessDeniedException: Access is denied
 2023-11-03 09:17:29,214 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor.traceDebug:119 - Writing [[MealTo{id=100011, dateTime=2023-11-03T09:17, description='Рыба', calories=100, excess=false}, MealT (truncated)...]
 2023-11-03 09:17:29,215 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
 2023-11-03 09:18:56,041 DEBUG o.s.web.context.support.XmlWebApplicationContext.doClose:1006 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet', started on Fri Nov 03 09:16:46 MSK 2023, parent: Root WebApplicationContext
+2023-11-05 00:19:35,019 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-11-05 00:19:35,055 DEBUG o.s.web.context.support.XmlWebApplicationContext.prepareRefresh:596 - Refreshing Root WebApplicationContext
+2023-11-05 00:19:35,186 INFO  o.s.security.core.SpringSecurityCoreVersion.performVersionChecks:82 - You are running with Spring Security Core 5.2.15.RELEASE
+2023-11-05 00:19:35,189 INFO  o.s.security.config.SecurityNamespaceHandler.<init>:78 - Spring Security 'config' module version is 5.2.15.RELEASE
+2023-11-05 00:19:35,212 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'hasRole('ROLE_ADMIN')' for /rest/admin/**
+2023-11-05 00:19:35,213 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'isAuthenticated()' for /**
+2023-11-05 00:19:35,227 INFO  o.s.s.config.http.HttpSecurityBeanDefinitionParser.checkFilterChainOrder:307 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2300, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2600]
+2023-11-05 00:19:35,319 DEBUG o.s.web.context.support.StandardServletEnvironment.setActiveProfiles:252 - Activating profiles [jdbc, postgres]
+2023-11-05 00:19:35,913 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-11-05 00:19:35,933 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-11-05 00:19:35,953 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-11-05 00:19:35,998 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2023-11-05 00:19:36,000 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/webjars/**'], []
+2023-11-05 00:19:36,098 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource.processMap:74 - Adding web access control expression 'hasRole('ROLE_ADMIN')', for Ant [pattern='/rest/admin/**']
+2023-11-05 00:19:36,115 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource.processMap:74 - Adding web access control expression 'isAuthenticated()', for any request
+2023-11-05 00:19:36,117 DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor.afterPropertiesSet:180 - Validated configuration attributes
+2023-11-05 00:19:36,118 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/rest/**'], [org.springframework.security.web.context.SecurityContextPersistenceFilter@505ed40f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@250c32f2, org.springframework.security.web.header.HeaderWriterFilter@1e19dd53, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1ed2ed4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c54e87f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ccbfedc, org.springframework.security.web.access.ExceptionTranslationFilter@20d8b48e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62a843e7]
+2023-11-05 00:19:36,675 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1650 ms
+2023-11-05 00:19:36,683 DEBUG o.s.web.filter.CharacterEncodingFilter.init:242 - Filter 'encodingFilter' configured for use
+2023-11-05 00:19:36,684 DEBUG o.springframework.web.filter.DelegatingFilterProxy.init:242 - Filter 'springSecurityFilterChain' configured for use
+2023-11-05 00:19:36,696 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-11-05 00:19:36,698 DEBUG o.s.web.context.support.XmlWebApplicationContext.prepareRefresh:596 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet'
+2023-11-05 00:19:37,080 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 22 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-11-05 00:19:37,111 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-11-05 00:19:37,318 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:614 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-05 00:19:37,348 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:614 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-05 00:19:37,367 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:297 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-05 00:19:37,385 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-11-05 00:19:37,387 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/webjars/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2023-11-05 00:19:37,401 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-05 00:19:37,401 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 705 ms
+2023-11-05 00:19:37,968 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/resources/**'
+2023-11-05 00:19:37,969 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/webjars/**'
+2023-11-05 00:19:37,969 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/rest/**'
+2023-11-05 00:19:37,970 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - / has no matching filters
+2023-11-05 00:19:37,974 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-11-05 00:19:37,977 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-11-05 00:19:37,988 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-11-05 00:19:37,991 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-11-05 00:19:38,766 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:19:39,081 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/resources/**'
+2023-11-05 00:19:39,083 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/webjars/**'
+2023-11-05 00:19:39,083 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/rest/**'
+2023-11-05 00:19:39,083 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - / has no matching filters
+2023-11-05 00:19:39,084 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-11-05 00:19:39,084 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-11-05 00:19:39,086 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-11-05 00:19:39,087 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-11-05 00:19:39,092 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:19:39,124 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/resources/css/style.css'; against '/resources/**'
+2023-11-05 00:19:39,124 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /resources/css/style.css has an empty filter list
+2023-11-05 00:19:39,125 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-11-05 00:19:39,125 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/noty/3.1.4/demo/font-awesome/css/font-awesome.min.css'; against '/resources/**'
+2023-11-05 00:19:39,125 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/noty/3.1.4/demo/font-awesome/css/font-awesome.min.css'; against '/webjars/**'
+2023-11-05 00:19:39,125 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /webjars/noty/3.1.4/demo/font-awesome/css/font-awesome.min.css has an empty filter list
+2023-11-05 00:19:39,125 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/webjars/noty/3.1.4/demo/font-awesome/css/font-awesome.min.css", parameters={}
+2023-11-05 00:19:39,127 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/resources/images/icon-meal.png'; against '/resources/**'
+2023-11-05 00:19:39,127 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /resources/images/icon-meal.png has an empty filter list
+2023-11-05 00:19:39,128 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/images/icon-meal.png", parameters={}
+2023-11-05 00:19:39,128 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/bootstrap/4.4.0/dist/css/bootstrap.min.css'; against '/resources/**'
+2023-11-05 00:19:39,128 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/bootstrap/4.4.0/dist/css/bootstrap.min.css'; against '/webjars/**'
+2023-11-05 00:19:39,128 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /webjars/bootstrap/4.4.0/dist/css/bootstrap.min.css has an empty filter list
+2023-11-05 00:19:39,128 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/webjars/bootstrap/4.4.0/dist/css/bootstrap.min.css", parameters={}
+2023-11-05 00:19:39,129 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/datatables/1.10.20/css/dataTables.bootstrap4.min.css'; against '/resources/**'
+2023-11-05 00:19:39,129 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/datatables/1.10.20/css/dataTables.bootstrap4.min.css'; against '/webjars/**'
+2023-11-05 00:19:39,129 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /webjars/datatables/1.10.20/css/dataTables.bootstrap4.min.css has an empty filter list
+2023-11-05 00:19:39,129 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/webjars/datatables/1.10.20/css/dataTables.bootstrap4.min.css", parameters={}
+2023-11-05 00:19:39,129 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/noty/3.1.4/lib/noty.css'; against '/resources/**'
+2023-11-05 00:19:39,131 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/noty/3.1.4/lib/noty.css'; against '/webjars/**'
+2023-11-05 00:19:39,131 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /webjars/noty/3.1.4/lib/noty.css has an empty filter list
+2023-11-05 00:19:39,132 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/webjars/noty/3.1.4/lib/noty.css", parameters={}
+2023-11-05 00:19:39,141 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-11-05 00:19:39,142 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-11-05 00:19:39,142 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-11-05 00:19:39,142 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-11-05 00:19:39,142 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-11-05 00:19:39,142 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-11-05 00:19:39,147 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-11-05 00:19:39,149 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/datatables/1.10.20/js/dataTables.bootstrap4.min.js'; against '/resources/**'
+2023-11-05 00:19:39,149 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/datatables/1.10.20/js/dataTables.bootstrap4.min.js'; against '/webjars/**'
+2023-11-05 00:19:39,149 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /webjars/datatables/1.10.20/js/dataTables.bootstrap4.min.js has an empty filter list
+2023-11-05 00:19:39,149 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/webjars/datatables/1.10.20/js/dataTables.bootstrap4.min.js", parameters={}
+2023-11-05 00:19:39,150 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-11-05 00:19:39,172 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-11-05 00:19:39,173 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-11-05 00:19:39,175 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/jquery/3.4.1/jquery.min.js'; against '/resources/**'
+2023-11-05 00:19:39,176 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/jquery/3.4.1/jquery.min.js'; against '/webjars/**'
+2023-11-05 00:19:39,176 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /webjars/jquery/3.4.1/jquery.min.js has an empty filter list
+2023-11-05 00:19:39,176 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/webjars/jquery/3.4.1/jquery.min.js", parameters={}
+2023-11-05 00:19:39,176 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-11-05 00:19:39,180 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/bootstrap/4.4.0/dist/js/bootstrap.min.js'; against '/resources/**'
+2023-11-05 00:19:39,180 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/bootstrap/4.4.0/dist/js/bootstrap.min.js'; against '/webjars/**'
+2023-11-05 00:19:39,181 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /webjars/bootstrap/4.4.0/dist/js/bootstrap.min.js has an empty filter list
+2023-11-05 00:19:39,181 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/webjars/bootstrap/4.4.0/dist/js/bootstrap.min.js", parameters={}
+2023-11-05 00:19:39,181 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-11-05 00:19:39,200 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:19:39,201 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:19:39,202 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:19:39,202 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:19:39,205 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:19:39,205 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/noty/3.1.4/lib/noty.min.js'; against '/resources/**'
+2023-11-05 00:19:39,205 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/noty/3.1.4/lib/noty.min.js'; against '/webjars/**'
+2023-11-05 00:19:39,205 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /webjars/noty/3.1.4/lib/noty.min.js has an empty filter list
+2023-11-05 00:19:39,206 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/webjars/noty/3.1.4/lib/noty.min.js", parameters={}
+2023-11-05 00:19:39,206 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-11-05 00:19:39,206 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:19:39,207 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/datatables/1.10.20/js/jquery.dataTables.min.js'; against '/resources/**'
+2023-11-05 00:19:39,207 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/datatables/1.10.20/js/jquery.dataTables.min.js'; against '/webjars/**'
+2023-11-05 00:19:39,207 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /webjars/datatables/1.10.20/js/jquery.dataTables.min.js has an empty filter list
+2023-11-05 00:19:39,208 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/webjars/datatables/1.10.20/js/jquery.dataTables.min.js", parameters={}
+2023-11-05 00:19:39,208 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-11-05 00:19:39,214 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:19:39,216 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:19:39,260 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/noty/3.1.4/demo/font-awesome/fonts/fontawesome-webfont.woff2'; against '/resources/**'
+2023-11-05 00:19:39,260 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/webjars/noty/3.1.4/demo/font-awesome/fonts/fontawesome-webfont.woff2'; against '/webjars/**'
+2023-11-05 00:19:39,260 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /webjars/noty/3.1.4/demo/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 has an empty filter list
+2023-11-05 00:19:39,260 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/webjars/noty/3.1.4/demo/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0", parameters={masked}
+2023-11-05 00:19:39,261 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-11-05 00:19:39,271 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-11-05 00:19:50,936 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/resources/**'
+2023-11-05 00:19:50,937 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/webjars/**'
+2023-11-05 00:19:50,938 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/rest/**'
+2023-11-05 00:19:51,024 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 1 of 8 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2023-11-05 00:19:51,027 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 2 of 8 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2023-11-05 00:19:51,029 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 3 of 8 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2023-11-05 00:19:51,032 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 4 of 8 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+2023-11-05 00:19:51,032 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 5 of 8 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2023-11-05 00:19:51,033 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 6 of 8 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2023-11-05 00:19:51,034 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter.doFilter:100 - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@46b2c69b: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 2D167EEBD8DAB21BECAE8F826847B3DA; Granted Authorities: ROLE_ANONYMOUS'
+2023-11-05 00:19:51,034 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 7 of 8 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2023-11-05 00:19:51,034 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 8 of 8 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2023-11-05 00:19:51,035 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/rest/admin/**'
+2023-11-05 00:19:51,035 DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor.beforeInvocation:219 - Secure object: FilterInvocation: URL: /rest/profile/meals; Attributes: [isAuthenticated()]
+2023-11-05 00:19:51,035 DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor.authenticateIfRequired:348 - Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@46b2c69b: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 2D167EEBD8DAB21BECAE8F826847B3DA; Granted Authorities: ROLE_ANONYMOUS
+2023-11-05 00:19:51,043 DEBUG o.s.security.access.vote.AffirmativeBased.decide:66 - Voter: org.springframework.security.web.access.expression.WebExpressionVoter@1ff9e5ff, returned: -1
+2023-11-05 00:19:51,045 DEBUG o.s.security.web.access.ExceptionTranslationFilter.handleSpringSecurityException:180 - Access is denied (user is anonymous); redirecting to authentication entry point
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:123)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:155)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-11-05 00:19:51,054 DEBUG o.s.security.web.access.ExceptionTranslationFilter.sendStartAuthentication:211 - Calling Authentication entry point.
+2023-11-05 00:19:51,054 DEBUG o.s.security.web.header.writers.HstsHeaderWriter.writeHeaders:169 - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@567e7af2
+2023-11-05 00:19:51,054 DEBUG o.s.s.web.context.SecurityContextPersistenceFilter.doFilter:119 - SecurityContextHolder now cleared, as request processing completed
+2023-11-05 00:19:51,059 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/resources/**'
+2023-11-05 00:19:51,060 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/webjars/**'
+2023-11-05 00:19:51,060 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/rest/**'
+2023-11-05 00:19:51,060 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 1 of 8 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2023-11-05 00:19:51,060 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 2 of 8 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2023-11-05 00:19:51,060 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 3 of 8 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2023-11-05 00:19:51,060 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 4 of 8 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+2023-11-05 00:19:51,061 DEBUG o.s.s.w.a.www.BasicAuthenticationFilter.doFilterInternal:163 - Basic Authentication Authorization header found for user 'UVPNv3-k0y6flhbcdyrxkkbkiw3rhanki4gb07bafy2s20ckjtw71ibjr0n35934b06a4sf&13005721'
+2023-11-05 00:19:51,061 DEBUG o.s.security.authentication.ProviderManager.authenticate:170 - Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2023-11-05 00:19:51,062 DEBUG o.s.s.authentication.dao.DaoAuthenticationProvider.authenticate:148 - User 'UVPNv3-k0y6flhbcdyrxkkbkiw3rhanki4gb07bafy2s20ckjtw71ibjr0n35934b06a4sf&13005721' not found
+2023-11-05 00:19:51,062 DEBUG o.s.s.w.a.www.BasicAuthenticationFilter.doFilterInternal:187 - Authentication request for failed: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2023-11-05 00:19:51,062 DEBUG o.s.security.web.header.writers.HstsHeaderWriter.writeHeaders:169 - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@567e7af2
+2023-11-05 00:19:51,062 DEBUG o.s.s.web.context.SecurityContextPersistenceFilter.doFilter:119 - SecurityContextHolder now cleared, as request processing completed
+2023-11-05 00:19:56,917 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals/10002'; against '/resources/**'
+2023-11-05 00:19:56,918 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals/10002'; against '/webjars/**'
+2023-11-05 00:19:56,920 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals/10002'; against '/rest/**'
+2023-11-05 00:19:56,921 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 1 of 8 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2023-11-05 00:19:56,921 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 2 of 8 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2023-11-05 00:19:56,922 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 3 of 8 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2023-11-05 00:19:56,922 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 4 of 8 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+2023-11-05 00:19:56,923 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 5 of 8 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2023-11-05 00:19:56,923 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 6 of 8 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2023-11-05 00:19:56,924 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter.doFilter:100 - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@46b2c69b: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 2D167EEBD8DAB21BECAE8F826847B3DA; Granted Authorities: ROLE_ANONYMOUS'
+2023-11-05 00:19:56,925 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 7 of 8 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2023-11-05 00:19:56,926 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 8 of 8 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2023-11-05 00:19:56,926 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals/10002'; against '/rest/admin/**'
+2023-11-05 00:19:56,926 DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor.beforeInvocation:219 - Secure object: FilterInvocation: URL: /rest/profile/meals/10002; Attributes: [isAuthenticated()]
+2023-11-05 00:19:56,927 DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor.authenticateIfRequired:348 - Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@46b2c69b: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 2D167EEBD8DAB21BECAE8F826847B3DA; Granted Authorities: ROLE_ANONYMOUS
+2023-11-05 00:19:56,927 DEBUG o.s.security.access.vote.AffirmativeBased.decide:66 - Voter: org.springframework.security.web.access.expression.WebExpressionVoter@1ff9e5ff, returned: -1
+2023-11-05 00:19:56,928 DEBUG o.s.security.web.access.ExceptionTranslationFilter.handleSpringSecurityException:180 - Access is denied (user is anonymous); redirecting to authentication entry point
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:123)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:155)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-11-05 00:19:56,928 DEBUG o.s.security.web.access.ExceptionTranslationFilter.sendStartAuthentication:211 - Calling Authentication entry point.
+2023-11-05 00:19:56,929 DEBUG o.s.security.web.header.writers.HstsHeaderWriter.writeHeaders:169 - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@567e7af2
+2023-11-05 00:19:56,929 DEBUG o.s.s.web.context.SecurityContextPersistenceFilter.doFilter:119 - SecurityContextHolder now cleared, as request processing completed
+2023-11-05 00:19:56,951 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals/10002'; against '/resources/**'
+2023-11-05 00:19:56,951 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals/10002'; against '/webjars/**'
+2023-11-05 00:19:56,951 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals/10002'; against '/rest/**'
+2023-11-05 00:19:56,951 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 1 of 8 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2023-11-05 00:19:56,951 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 2 of 8 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2023-11-05 00:19:56,951 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 3 of 8 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2023-11-05 00:19:56,952 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals/10002 at position 4 of 8 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+2023-11-05 00:19:56,952 DEBUG o.s.s.w.a.www.BasicAuthenticationFilter.doFilterInternal:163 - Basic Authentication Authorization header found for user 'UVPNv3-k0y6flhbcdyrxkkbkiw3rhanki4gb07bafy2s20ckjtw71ibjr0n35934b06a4sf&13005721'
+2023-11-05 00:19:56,952 DEBUG o.s.security.authentication.ProviderManager.authenticate:170 - Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2023-11-05 00:19:56,952 DEBUG o.s.s.authentication.dao.DaoAuthenticationProvider.authenticate:148 - User 'UVPNv3-k0y6flhbcdyrxkkbkiw3rhanki4gb07bafy2s20ckjtw71ibjr0n35934b06a4sf&13005721' not found
+2023-11-05 00:19:56,952 DEBUG o.s.s.w.a.www.BasicAuthenticationFilter.doFilterInternal:187 - Authentication request for failed: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2023-11-05 00:19:56,952 DEBUG o.s.security.web.header.writers.HstsHeaderWriter.writeHeaders:169 - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@567e7af2
+2023-11-05 00:19:56,952 DEBUG o.s.s.web.context.SecurityContextPersistenceFilter.doFilter:119 - SecurityContextHolder now cleared, as request processing completed
+2023-11-05 00:20:47,372 DEBUG o.s.web.context.support.XmlWebApplicationContext.doClose:1006 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet', started on Sun Nov 05 00:19:36 MSK 2023, parent: Root WebApplicationContext
+2023-11-05 00:22:06,494 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:271 - Root WebApplicationContext: initialization started
+2023-11-05 00:22:06,528 DEBUG o.s.web.context.support.XmlWebApplicationContext.prepareRefresh:596 - Refreshing Root WebApplicationContext
+2023-11-05 00:22:06,663 INFO  o.s.security.core.SpringSecurityCoreVersion.performVersionChecks:82 - You are running with Spring Security Core 5.2.15.RELEASE
+2023-11-05 00:22:06,666 INFO  o.s.security.config.SecurityNamespaceHandler.<init>:78 - Spring Security 'config' module version is 5.2.15.RELEASE
+2023-11-05 00:22:06,702 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'hasRole('ROLE_ADMIN')' for /rest/admin/**
+2023-11-05 00:22:06,702 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'isAuthenticated()' for /**
+2023-11-05 00:22:06,716 INFO  o.s.s.config.http.HttpSecurityBeanDefinitionParser.checkFilterChainOrder:307 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2300, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2600]
+2023-11-05 00:22:06,807 DEBUG o.s.web.context.support.StandardServletEnvironment.setActiveProfiles:252 - Activating profiles [jdbc, postgres]
+2023-11-05 00:22:07,409 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2023-11-05 00:22:07,429 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-11-05 00:22:07,450 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/kokosik/TopJava/SpringFood/target/topjava/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2023-11-05 00:22:07,496 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2023-11-05 00:22:07,498 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/webjars/**'], []
+2023-11-05 00:22:07,602 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource.processMap:74 - Adding web access control expression 'hasRole('ROLE_ADMIN')', for Ant [pattern='/rest/admin/**']
+2023-11-05 00:22:07,621 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource.processMap:74 - Adding web access control expression 'isAuthenticated()', for any request
+2023-11-05 00:22:07,622 DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor.afterPropertiesSet:180 - Validated configuration attributes
+2023-11-05 00:22:07,624 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/rest/**'], [org.springframework.security.web.context.SecurityContextPersistenceFilter@4029abf5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@404e9e9a, org.springframework.security.web.header.HeaderWriterFilter@5ef39c0a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@215bfc05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b929a04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65fd6c97, org.springframework.security.web.access.ExceptionTranslationFilter@48e1952d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44c4f654]
+2023-11-05 00:22:08,158 INFO  org.springframework.web.context.ContextLoader.initWebApplicationContext:307 - Root WebApplicationContext initialized in 1661 ms
+2023-11-05 00:22:08,166 DEBUG o.s.web.filter.CharacterEncodingFilter.init:242 - Filter 'encodingFilter' configured for use
+2023-11-05 00:22:08,167 DEBUG o.springframework.web.filter.DelegatingFilterProxy.init:242 - Filter 'springSecurityFilterChain' configured for use
+2023-11-05 00:22:08,180 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'mvc-dispatcher'
+2023-11-05 00:22:08,182 DEBUG o.s.web.context.support.XmlWebApplicationContext.prepareRefresh:596 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet'
+2023-11-05 00:22:08,578 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:351 - 22 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2023-11-05 00:22:08,608 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.17.Final
+2023-11-05 00:22:08,819 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:614 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-05 00:22:08,849 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:614 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-05 00:22:08,863 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:297 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-05 00:22:08,883 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/resources/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2023-11-05 00:22:08,884 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandlers:173 - Patterns [/webjars/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2023-11-05 00:22:08,900 DEBUG org.springframework.web.servlet.DispatcherServlet.initServletBean:542 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-05 00:22:08,901 INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 721 ms
+2023-11-05 00:22:09,013 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/resources/**'
+2023-11-05 00:22:09,014 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/webjars/**'
+2023-11-05 00:22:09,014 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/rest/**'
+2023-11-05 00:22:09,015 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - / has no matching filters
+2023-11-05 00:22:09,019 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-11-05 00:22:09,023 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-11-05 00:22:09,037 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-11-05 00:22:09,041 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-11-05 00:22:09,851 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:22:10,083 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/resources/**'
+2023-11-05 00:22:10,083 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/webjars/**'
+2023-11-05 00:22:10,083 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/'; against '/rest/**'
+2023-11-05 00:22:10,083 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - / has no matching filters
+2023-11-05 00:22:10,083 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/", parameters={}
+2023-11-05 00:22:10,084 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler:415 - Mapped to ru.javawebinar.topjava.web.RootController#root()
+2023-11-05 00:22:10,085 DEBUG org.springframework.web.servlet.view.JstlView.render:309 - View name 'index', model {}
+2023-11-05 00:22:10,088 DEBUG org.springframework.web.servlet.view.JstlView.renderMergedOutputModel:169 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2023-11-05 00:22:10,095 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 200 OK
+2023-11-05 00:22:10,141 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/resources/css/style.css'; against '/resources/**'
+2023-11-05 00:22:10,142 DEBUG org.springframework.security.web.FilterChainProxy.doFilterInternal:202 - /resources/css/style.css has an empty filter list
+2023-11-05 00:22:10,142 DEBUG org.springframework.web.servlet.DispatcherServlet.traceDebug:119 - GET "/topjava_war_exploded/resources/css/style.css", parameters={}
+2023-11-05 00:22:10,150 DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping.getHandler:415 - Mapped to ResourceHttpRequestHandler ["/resources/"]
+2023-11-05 00:22:10,152 DEBUG org.springframework.web.servlet.DispatcherServlet.logResult:1131 - Completed 304 NOT_MODIFIED
+2023-11-05 00:22:29,286 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/resources/**'
+2023-11-05 00:22:29,286 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/webjars/**'
+2023-11-05 00:22:29,286 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/rest/**'
+2023-11-05 00:22:29,295 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 1 of 8 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2023-11-05 00:22:29,296 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 2 of 8 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2023-11-05 00:22:29,297 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 3 of 8 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2023-11-05 00:22:29,300 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 4 of 8 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+2023-11-05 00:22:29,300 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 5 of 8 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2023-11-05 00:22:29,301 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 6 of 8 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2023-11-05 00:22:29,302 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter.doFilter:100 - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@2a7f87ce: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffbcba8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 0315A65BBD008AF2B56DDE49A3E500E5; Granted Authorities: ROLE_ANONYMOUS'
+2023-11-05 00:22:29,302 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 7 of 8 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2023-11-05 00:22:29,302 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 8 of 8 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2023-11-05 00:22:29,302 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/rest/admin/**'
+2023-11-05 00:22:29,303 DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor.beforeInvocation:219 - Secure object: FilterInvocation: URL: /rest/profile/meals; Attributes: [isAuthenticated()]
+2023-11-05 00:22:29,303 DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor.authenticateIfRequired:348 - Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@2a7f87ce: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffbcba8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 0315A65BBD008AF2B56DDE49A3E500E5; Granted Authorities: ROLE_ANONYMOUS
+2023-11-05 00:22:29,308 DEBUG o.s.security.access.vote.AffirmativeBased.decide:66 - Voter: org.springframework.security.web.access.expression.WebExpressionVoter@2b535e85, returned: -1
+2023-11-05 00:22:29,309 DEBUG o.s.security.web.access.ExceptionTranslationFilter.handleSpringSecurityException:180 - Access is denied (user is anonymous); redirecting to authentication entry point
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:123)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:155)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-11-05 00:22:29,312 DEBUG o.s.security.web.access.ExceptionTranslationFilter.sendStartAuthentication:211 - Calling Authentication entry point.
+2023-11-05 00:22:29,313 DEBUG o.s.security.web.header.writers.HstsHeaderWriter.writeHeaders:169 - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@5d29948b
+2023-11-05 00:22:29,313 DEBUG o.s.s.web.context.SecurityContextPersistenceFilter.doFilter:119 - SecurityContextHolder now cleared, as request processing completed
+2023-11-05 00:22:29,317 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/resources/**'
+2023-11-05 00:22:29,317 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/webjars/**'
+2023-11-05 00:22:29,318 DEBUG o.s.s.web.util.matcher.AntPathRequestMatcher.matches:177 - Checking match of request : '/rest/profile/meals'; against '/rest/**'
+2023-11-05 00:22:29,318 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 1 of 8 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2023-11-05 00:22:29,318 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 2 of 8 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2023-11-05 00:22:29,318 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 3 of 8 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2023-11-05 00:22:29,318 DEBUG org.springframework.security.web.FilterChainProxy.doFilter:328 - /rest/profile/meals at position 4 of 8 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+2023-11-05 00:22:29,319 DEBUG o.s.s.w.a.www.BasicAuthenticationFilter.doFilterInternal:163 - Basic Authentication Authorization header found for user 'UVPNv3-k0y6flhbcdyrxkkbkiw3rhanki4gb07bafy2s20ckjtw71ibjr0n35934b06a4sf&13005721'
+2023-11-05 00:22:29,319 DEBUG o.s.security.authentication.ProviderManager.authenticate:170 - Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2023-11-05 00:22:29,320 DEBUG o.s.s.authentication.dao.DaoAuthenticationProvider.authenticate:148 - User 'UVPNv3-k0y6flhbcdyrxkkbkiw3rhanki4gb07bafy2s20ckjtw71ibjr0n35934b06a4sf&13005721' not found
+2023-11-05 00:22:29,320 DEBUG o.s.s.w.a.www.BasicAuthenticationFilter.doFilterInternal:187 - Authentication request for failed: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+2023-11-05 00:22:29,320 DEBUG o.s.security.web.header.writers.HstsHeaderWriter.writeHeaders:169 - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@5d29948b
+2023-11-05 00:22:29,320 DEBUG o.s.s.web.context.SecurityContextPersistenceFilter.doFilter:119 - SecurityContextHolder now cleared, as request processing completed
+2023-11-05 00:22:48,594 DEBUG o.s.web.context.support.XmlWebApplicationContext.doClose:1006 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet', started on Sun Nov 05 00:22:08 MSK 2023, parent: Root WebApplicationContext
