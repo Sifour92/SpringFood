@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 import org.hibernate.Hibernate;
 import org.springframework.data.domain.Persistable;
+import ru.javawebinar.topjava.HasId;
 
 @MappedSuperclass
 // http://stackoverflow.com/questions/594597/hibernate-annotations-which-is-better-field-or-property-access
@@ -13,7 +14,7 @@ import org.springframework.data.domain.Persistable;
 // При загрузке `Meal` Hibernate на основе поля `meal.user_id`
 // делает ленивую прокcи к `User`, у которой нет ничего, кроме id.
 //@JsonAutoDetect(fieldVisibility = ANY, getterVisibility = NONE, isGetterVisibility = NONE, setterVisibility = NONE)
-public abstract class AbstractBaseEntity implements Persistable<Integer>{
+public abstract class AbstractBaseEntity implements HasId {
     public static final int START_SEQ = 100000;
 
     @Id
@@ -31,7 +32,7 @@ public abstract class AbstractBaseEntity implements Persistable<Integer>{
     protected AbstractBaseEntity(Integer id) {
         this.id = id;
     }
-
+    @Override
     public void setId(Integer id) {
         this.id = id;
     }
@@ -39,10 +40,6 @@ public abstract class AbstractBaseEntity implements Persistable<Integer>{
     @Override
     public Integer getId() {
         return id;
-    }
-    @Override
-    public boolean isNew() {
-        return this.id == null;
     }
 
     @Override

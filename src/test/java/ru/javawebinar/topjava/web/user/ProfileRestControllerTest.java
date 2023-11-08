@@ -7,6 +7,8 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import ru.javawebinar.topjava.UserTestData;
 import ru.javawebinar.topjava.model.User;
 import ru.javawebinar.topjava.service.UserService;
+import ru.javawebinar.topjava.to.UserTo;
+import ru.javawebinar.topjava.util.UserUtil;
 import ru.javawebinar.topjava.web.json.JsonUtil;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -37,12 +39,12 @@ class ProfileRestControllerTest extends AbstractControllerTest {
 
     @Test
     void update() throws Exception {
-        User updated = UserTestData.getUpdated();
+        UserTo updatedTo = new UserTo(null, "newName", "newemail@ya.ru", "newPassword", 1500);
         mockMvc.perform(MockMvcRequestBuilders.put(REST_URL).contentType(MediaType.APPLICATION_JSON)
-                        .content(JsonUtil.writeValue(updated)))
+                        .content(JsonUtil.writeValue(updatedTo)))
                 .andDo(print())
                 .andExpect(status().isNoContent());
 
-        assertMatch(userService.get(USER_ID), updated);
+        assertMatch(userService.get(USER_ID), UserUtil.updateFromTo(new User(USER), updatedTo));
     }
 }

@@ -17,6 +17,16 @@ function add() {
     successNoty("Deleted");
 }
 
+
+function updateRow(id) {
+    $.get(context.ajaxUrl + id, function (data) {
+        $.each(data, function (key, value) {
+            form.find("input[name='" + key + "']").val(value);
+        });
+        $('#editRow').modal();
+    });
+}
+
 function deleteRow(id) {
     if (confirm('Are you sure?')) {
         $.ajax({
@@ -30,7 +40,7 @@ function deleteRow(id) {
 }
 
 function updateTableByData(data) {
-        context.datatableApi.clear().rows.add(data).draw();
+    context.datatableApi.clear().rows.add(data).draw();
 }
 
 var failedNote;
@@ -55,8 +65,7 @@ function successNoty(text) {
 function failNoty(jqXHR) {
     closeNoty();
     failedNote = new Noty({
-        text: "<span class='fa fa-lg fa-exclamation-circle'></span> &nbsp;Error status: " + jqXHR.status,
-        type: "error",
+        text: "<span class='fa fa-lg fa-exclamation-circle'></span> &nbsp;Error status: " + jqXHR.status + (jqXHR.responseJSON ? "<br>" + jqXHR.responseJSON : ""),        type: "error",
         layout: "bottomRight"
     }).show();
 }
@@ -69,5 +78,6 @@ function save() {
         data: form.serialize()
     }).done(function () {
         $("#editRow").modal("hide");
-        context.updateTable();    });
+        context.updateTable();
+    });
 }
